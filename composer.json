@@ -1,0 +1,25 @@
+{
+    "name": "cesar/fitness-app",
+    "type": "project",
+    "require": {
+        "propel/propel1": "^1.7",
+        "bower-asset/materialize": "^0.97.7",
+        "bower-asset/angularjs": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Cesar Ramirez",
+            "email": "ers.cesar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "backend\\": "backend",
+            "frontend\\": "frontend"
+        }
+    }
+}
