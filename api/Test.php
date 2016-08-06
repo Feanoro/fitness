@@ -6,7 +6,7 @@
  * Time: 5:56 PM
  */
 
-namespace frontend\web;
+namespace api;
 
 class Test
 {

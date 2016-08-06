@@ -18,8 +18,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "backend\\": "backend",
-            "frontend\\": "frontend"
+            "api\\": "api"
         }
     }
 }
