@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e4c21cc77b9f1ccf54096f894e5d932",
-    "content-hash": "58834ba48d80c726f6d78281bdbb5f11",
+    "hash": "c8cc1433ac54e6a6620417ae7e603c2c",
+    "content-hash": "d1f2ae7653f9ba03cdb513757b0ec6a3",
     "packages": [
         {
             "name": "bower-asset/angular",
@@ -106,93 +106,44 @@
             ]
         },
         {
-            "name": "bower-asset/jquery",
-            "version": "dev-master",
+            "name": "bower-asset/material-design-lite",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "6f02bc382c0529d3b4f68f6b2ad21876642dbbfe"
+                "url": "https://github.com/google/material-design-lite.git",
+                "reference": "b3eee10210ceff6f04d3bd3ac34518c86ab585c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/6f02bc382c0529d3b4f68f6b2ad21876642dbbfe",
-                "reference": "6f02bc382c0529d3b4f68f6b2ad21876642dbbfe",
+                "url": "https://api.github.com/repos/google/material-design-lite/zipball/b3eee10210ceff6f04d3bd3ac34518c86ab585c7",
+                "reference": "b3eee10210ceff6f04d3bd3ac34518c86ab585c7",
                 "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "dist/jquery.js",
-                "bower-asset-ignore": [
-                    "package.json"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "browser",
-                "javascript",
-                "jquery",
-                "library"
-            ]
-        },
-        {
-            "name": "bower-asset/materialize",
-            "version": "v0.97.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Dogfalo/materialize.git",
-                "reference": "c0bf0b7e71e4763bb2aa31f8100c7e0e97964cec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/c0bf0b7e71e4763bb2aa31f8100c7e0e97964cec",
-                "reference": "c0bf0b7e71e4763bb2aa31f8100c7e0e97964cec",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=2.1.1"
             },
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "bin/materialize.css",
-                    "bin/materialize.js"
+                    "material.min.css",
+                    "material.min.js"
                 ],
                 "bower-asset-ignore": [
-                    "jade/",
-                    ".gitignore",
-                    "CNAME",
-                    "css/",
-                    "bower.json",
-                    "README.md",
-                    "images/",
-                    "js/jquery.timeago.js",
-                    "js/init.js",
-                    "js/prism.js",
-                    "res/",
-                    "sass/style.scss",
-                    "sass/ghpages-materialize.scss",
-                    "**/*.html",
-                    "**/*.zip",
-                    "**/*.txt",
-                    "sitemap.xml",
-                    "package.json",
-                    "Gruntfile.js"
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "./lib/.bower_components",
+                    "test",
+                    "tests"
                 ]
             },
-            "description": "A modern responsive front-end framework based on Material Design",
+            "license": [
+                "Apache-2"
+            ],
+            "description": "Material Design Components in CSS, JS and HTML",
             "keywords": [
-                "css",
                 "design",
-                "framework",
-                "front-end",
-                "js",
+                "guide",
                 "material",
-                "mobile-first",
-                "responsive",
-                "sass",
-                "ux"
+                "style",
+                "styleguide"
             ]
         },
         {
@@ -201,12 +152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "1a639d9c000b0f712b9ed1e831ede87de26c32ae"
+                "reference": "9b549818fdfee69381b5723f95012ab5060fd556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/1a639d9c000b0f712b9ed1e831ede87de26c32ae",
-                "reference": "1a639d9c000b0f712b9ed1e831ede87de26c32ae",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/9b549818fdfee69381b5723f95012ab5060fd556",
+                "reference": "9b549818fdfee69381b5723f95012ab5060fd556",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +237,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2016-07-29 09:16:07"
+            "time": "2016-08-04 21:53:53"
         },
         {
             "name": "propel/propel1",
@@ -907,12 +858,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d1e1d73a5a49e8f963572a46058da2e56d30566d"
+                "reference": "6f9f7e9f8a780c3845243f36d89b05eda06da7f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d1e1d73a5a49e8f963572a46058da2e56d30566d",
-                "reference": "d1e1d73a5a49e8f963572a46058da2e56d30566d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6f9f7e9f8a780c3845243f36d89b05eda06da7f2",
+                "reference": "6f9f7e9f8a780c3845243f36d89b05eda06da7f2",
                 "shasum": ""
             },
             "require": {
@@ -951,7 +902,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.5.x-dev"
+                    "dev-master": "5.6.x-dev"
                 }
             },
             "autoload": {
@@ -977,7 +928,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-07-29 11:55:47"
+            "time": "2016-08-04 05:45:48"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1557,12 +1508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "cd3288cd749886aa1ff43038f17db6494e883262"
+                "reference": "f891dd5781923380e069385881728250c929cb4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/cd3288cd749886aa1ff43038f17db6494e883262",
-                "reference": "cd3288cd749886aa1ff43038f17db6494e883262",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/f891dd5781923380e069385881728250c929cb4b",
+                "reference": "f891dd5781923380e069385881728250c929cb4b",
                 "shasum": ""
             },
             "require": {
@@ -1604,7 +1555,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-17 14:08:33"
+            "time": "2016-08-02 07:47:02"
         },
         {
             "name": "webmozart/assert",
