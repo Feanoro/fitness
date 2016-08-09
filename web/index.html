@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <title>Fitness App</title>
 
+    <!--Styles-->
     <link rel="stylesheet" href="../vendor/bower-asset/material-design-lite/material.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link rel="stylesheet" href="../vendor/bower-asset/angular-material/angular-material.min.css">-->
+    <link rel="stylesheet" href="../vendor/bower-asset/material-design-icons/iconfont/material-icons.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!--Dependency scripts-->
     <script type="text/javascript" src="../vendor/bower-asset/angular/angular.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="../vendor/bower-asset/angular-sanitize/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-animate/angular-animate.min.js"></script>
+    <!--<script type="text/javascript" src="../vendor/bower-asset/angular-material/angular-material.js"></script>-->
     <script type="text/javascript" src="../vendor/bower-asset/material-design-lite/material.min.js"></script>
 
+    <!--App Scripts-->
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="app.config.js"></script>
+
+    <!--Site Scripts-->
     <script type="text/javascript" src="site/site.module.js"></script>
     <script type="text/javascript" src="site/site.component.js"></script>
+
+    <!--User Scripts-->
+    <script type="text/javascript" src="user/user.js"></script>
+    <script type="text/javascript" src="user/user.config.js"></script>
+    <script type="text/javascript" src="user/register/register.component.js"></script>
+    <script type="text/javascript" src="user/login/login.component.js"></script>
+    <script type="text/javascript" src="user/logout/logout.component.js"></script>
+
+    <!--Question Scripts-->
+    <script type="text/javascript" src="question/question.module.js"></script>
 
 </head>
 <body>
@@ -25,28 +43,24 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Title</span>
+                <span class="mdl-layout-title">Fitness App</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
-                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="#!/">Index</a>
+                    <a class="mdl-navigation__link" href="#!/register">Register</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
+            <span class="mdl-layout-title">Fitness App</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="#!/">Index</a>
+                <a class="mdl-navigation__link" href="#!/register">Register</a>
             </nav>
         </div>
-        <main class="mdl-layout__content mdl-color--red-500">
+        <main class="mdl-layout__content mdl-color--red-400">
             <div class="page-content" ng-view><!-- Your content goes here --></div>
         </main>
     </div>

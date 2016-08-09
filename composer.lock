@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8cc1433ac54e6a6620417ae7e603c2c",
-    "content-hash": "d1f2ae7653f9ba03cdb513757b0ec6a3",
+    "hash": "6570230500e54feeb176e90a193c2608",
+    "content-hash": "a704dc75b3dda6753a167a0e28b44981",
     "packages": [
         {
             "name": "bower-asset/angular",
@@ -57,6 +57,90 @@
             ]
         },
         {
+            "name": "bower-asset/angular-aria",
+            "version": "v1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angular/bower-angular-aria.git",
+                "reference": "91710f3ee26d4e2858af0c91ec462aa43360da47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angular/bower-angular-aria/zipball/91710f3ee26d4e2858af0c91ec462aa43360da47",
+                "reference": "91710f3ee26d4e2858af0c91ec462aa43360da47",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/angular": "1.5.8"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "./angular-aria.js",
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/angular-material",
+            "version": "1.5.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angular/bower-material.git",
+                "reference": "d483e259d494295e77b43221c9295247aac81832"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angular/bower-material/zipball/d483e259d494295e77b43221c9295247aac81832",
+                "reference": "d483e259d494295e77b43221c9295247aac81832",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/angular": ">=1.4.8,<2.0.0",
+                "bower-asset/angular-animate": ">=1.4.8,<2.0.0",
+                "bower-asset/angular-aria": ">=1.4.8,<2.0.0",
+                "bower-asset/angular-messages": ">=1.4.8,<2.0.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "angular-material.js",
+                    "angular-material.css"
+                ],
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/angular-messages",
+            "version": "v1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angular/bower-angular-messages.git",
+                "reference": "55b1706ce1fbedf88dc9a98f5e0cd01d00110178"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angular/bower-angular-messages/zipball/55b1706ce1fbedf88dc9a98f5e0cd01d00110178",
+                "reference": "55b1706ce1fbedf88dc9a98f5e0cd01d00110178",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/angular": "1.5.8"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "./angular-messages.js",
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/angular-route",
             "version": "v1.5.8",
             "source": {
@@ -76,6 +160,32 @@
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": "./angular-route.js",
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/angular-sanitize",
+            "version": "v1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/angular/bower-angular-sanitize.git",
+                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/angular/bower-angular-sanitize/zipball/380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
+                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/angular": "1.5.8"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "./angular-sanitize.js",
                 "bower-asset-ignore": []
             },
             "license": [
@@ -103,6 +213,32 @@
             },
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/material-design-icons",
+            "version": "2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google/material-design-icons.git",
+                "reference": "12f6cc93f31118340c3adb26fce026bf48bc074c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google/material-design-icons/zipball/12f6cc93f31118340c3adb26fce026bf48bc074c",
+                "reference": "12f6cc93f31118340c3adb26fce026bf48bc074c",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "license": [
+                "CC-BY-4.0"
+            ],
+            "description": "Material Design icons by Google",
+            "keywords": [
+                "google",
+                "icons",
+                "material",
+                "material-design"
             ]
         },
         {

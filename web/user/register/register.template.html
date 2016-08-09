@@ -1,0 +1,32 @@
+<div class="mdl-grid">
+    <div class="mdl-cell  mdl-cell--4-offset mdl-cell--4-col">
+        <div class="mdl-color--white mdl-shadow--6dp" style="padding:30px;">
+            <h3>Register Form</h3>
+            <form action="#" method="POST">
+                <div class="mdl-textfield mdl-textfield--full-width  mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="[a-zA-Z]?[a-z/\s]+$" id="fullname">
+                    <label class="mdl-textfield__label" for="fullname">Full Name*</label>
+                    <span class="mdl-textfield__error">Invalid name</span>
+                </div>
+                <br>
+                <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="[a-zA-Z]?[a-z/\s]+$" name="username" id="username">
+                    <label class="mdl-textfield__label" for="username">Username or Email*</label>
+                    <span class="mdl-textfield__error">Invalid input</span>
+                </div>
+                <br>
+                <div class="mdl-textfield mdl-textfield--full-width  mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="password">
+                    <label class="mdl-textfield__label" for="password">Password*</label>
+                    <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+                <br>
+                <!-- Colored raised button -->
+                <button ng-click="" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                    Register
+                </button>
+            </form>
+        </div>
+
+    </div>
+</div>
