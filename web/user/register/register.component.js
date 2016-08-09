@@ -1,12 +1,11 @@
 'use strict';
 
-function registerController()
-{
-    this.data = "Hello world!";
+function registerController() {
+    this.form_title = "Register";
 }
 
 angular.module('user')
     .component("register", {
-        templateUrl: "user/register/register.template.html",
+        templateUrl: "user/template/user.form.html",
         controller: registerController
     });
