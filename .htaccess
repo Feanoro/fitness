@@ -1,4 +1,4 @@
-DirectoryIndex frontend/index.php
+DirectoryIndex web/index.html#!/
 
 <Files .htaccess>
 order allow,deny

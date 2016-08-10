@@ -5,7 +5,8 @@ angular.module('fitnessApp', [
     'ngRoute',
     //'ngMaterial',
     'site',
-    'user'
+    'user',
+    'question'
 ]);
 
 angular.module('fitnessApp').run(function(){

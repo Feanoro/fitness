@@ -1,0 +1,17 @@
+<div class="md-grid set-down">
+    <div class="mdl-cell mdl-cell--12-col">
+        <h1 class="mdl-color-text--white mdl-typography--text-center">
+            {{$ctrl.statament}}
+        </h1>
+    </div>
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
+        <button ng-click="$ctrl.answer(true)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--white center">
+            TRUE<!--<i class="material-icons">check</i>-->
+        </button>
+        <button ng-click="$ctrl.answer(false)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--white center">
+            FALSE<!--<i class="material-icons">close</i>-->
+        </button>
+    </div>
+</div>
