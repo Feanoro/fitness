@@ -1,0 +1,20 @@
+<div class="md-grid set-down">
+    <div class="mdl-cell mdl-cell--12-col">
+        <h1 class="mdl-color-text--white mdl-typography--text-center">
+            {{$ctrl.statement}}
+        </h1>
+    </div>
+</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--5-offset-desktop mdl-typography--text-center">
+        <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Type your hours</label>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--1-col mdl-cell--middle">
+        <button ng-click="$ctrl.answer(true)" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect ">
+            <i class="material-icons">arrow_forward</i>
+        </button>
+    </div>
+</div>

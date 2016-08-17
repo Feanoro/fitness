@@ -3,15 +3,16 @@
 // Define the `` module
 angular.module('fitnessApp', [
     'ngRoute',
-    //'ngMaterial',
+    'ngAnimate',
+    'layout',
     'site',
     'user',
     'question'
 ]);
 
-angular.module('fitnessApp').run(function(){
+angular.module('fitnessApp').run(function($interval){
     var mdlUpgradeDom = false;
-    setInterval(function() {
+    $interval(function() {
         if (mdlUpgradeDom) {
             componentHandler.upgradeDom();
             mdlUpgradeDom = false;

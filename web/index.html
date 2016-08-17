@@ -6,66 +6,86 @@
 
     <!--Styles-->
     <link rel="stylesheet" href="../vendor/bower-asset/material-design-lite/material.min.css">
-    <!--<link rel="stylesheet" href="../vendor/bower-asset/angular-material/angular-material.min.css">-->
     <link rel="stylesheet" href="../vendor/bower-asset/material-design-icons/iconfont/material-icons.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../vendor/bower-asset/dialog-polyfill/dialog-polyfill.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Dependency scripts-->
     <script type="text/javascript" src="../vendor/bower-asset/angular/angular.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-sanitize/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-animate/angular-animate.min.js"></script>
-    <!--<script type="text/javascript" src="../vendor/bower-asset/angular-material/angular-material.js"></script>-->
     <script type="text/javascript" src="../vendor/bower-asset/material-design-lite/material.min.js"></script>
+    <script type="text/javascript" src="../vendor/bower-asset/dialog-polyfill/dialog-polyfill.js"></script>
 
     <!--App Scripts-->
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="app.config.js"></script>
+    <script type="text/javascript" src="app.controller.js"></script>
+    <script type="text/javascript" src="app.constant.js"></script>
+
+    <!--Custom Services-->
+    <script type="text/javascript" src="services/random_background.js"></script>
+
+    <!--Layout Scripts-->
+    <script type="text/javascript" src="component/layout/layout.module.js"></script>
 
     <!--Site Scripts-->
-    <script type="text/javascript" src="site/site.module.js"></script>
-    <script type="text/javascript" src="site/site.component.js"></script>
+    <script type="text/javascript" src="component/site/site.module.js"></script>
+    <script type="text/javascript" src="component/site/index/index.component.js"></script>
 
     <!--User Scripts-->
-    <script type="text/javascript" src="user/user.js"></script>
-    <script type="text/javascript" src="user/user.config.js"></script>
-    <script type="text/javascript" src="user/register/register.component.js"></script>
-    <script type="text/javascript" src="user/login/login.component.js"></script>
-    <script type="text/javascript" src="user/logout/logout.component.js"></script>
+    <script type="text/javascript" src="component/user/user.js"></script>
+    <script type="text/javascript" src="component/user/user.config.js"></script>
+    <script type="text/javascript" src="component/user/register/register.component.js"></script>
+    <script type="text/javascript" src="component/user/login/login.component.js"></script>
+    <script type="text/javascript" src="component/user/logout/logout.component.js"></script>
 
     <!--Question Scripts-->
-    <script type="text/javascript" src="question/question.module.js"></script>
-    <script type="text/javascript" src="question/close-question/close-question.component.js"></script>
-    <script type="text/javascript" src="question/open/open.component.js"></script>
+    <script type="text/javascript" src="component/question/question.module.js"></script>
+    <script type="text/javascript" src="component/question/close-question/close-question.component.js"></script>
+    <script type="text/javascript" src="component/question/open/open.component.js"></script>
+    <script type="text/javascript" src="component/question/multiple-selection/multiple-selection.component.js"></script>
 
 </head>
-<body>
+<body ng-controller="mainController">
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
+        <header class="mdl-layout__header" ng-show="menu_visibility">
+            <div class="mdl-layout__drawer-button" tabindex="0" role="button" aria-expanded="false">
+                <i class="material-icons"></i>
+            </div>
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">Fitness App</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
-                <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="#!/">Index</a>
+                <!--<nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="#!/register">Register</a>
-                </nav>
+                    <a class="mdl-navigation__link" href="#!/">Index</a>
+                    <a class="mdl-navigation__link" href="#!/close-question">Close Question Type Button</a>
+                    <a class="mdl-navigation__link" href="#!/close-question-radio">Close Question Type Radio</a>
+                    <a class="mdl-navigation__link" href="#!/open">Open Question Type</a>
+                </nav>-->
             </div>
         </header>
-        <div class="mdl-layout__drawer">
+        <div class="mdl-layout__drawer" ng-show="menu_visibility">
             <span class="mdl-layout-title">Fitness App</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="#!/">Index</a>
                 <a class="mdl-navigation__link" href="#!/register">Register</a>
+                <a class="mdl-navigation__link" href="#!/close-question">Close Question Type Button</a>
+                <a class="mdl-navigation__link" href="#!/close-question-radio">Close Question Type Radio</a>
+                <a class="mdl-navigation__link" href="#!/multiple">Multiple Selection</a>
+                <a class="mdl-navigation__link" href="#!/multiple-img-block">Multiple Selection with Image Block</a>
+                <a class="mdl-navigation__link" href="#!/open">Open Question Type</a>
             </nav>
         </div>
-        <main class="mdl-layout__content mdl-color--red-400">
+
+        <main class="mdl-layout__content {{color}}">
             <div class="page-content" ng-view><!-- Your content goes here --></div>
         </main>
     </div>
-
 </body>
 </html>

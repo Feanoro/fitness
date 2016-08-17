@@ -1,0 +1,38 @@
+<div class="md-grid" ng-switch="$ctrl.questionType">
+    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+        <h2 class="mdl-color-text--white mdl-typography--text-center">
+            {{$ctrl.statement}}
+        </h2>
+    </div>
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col mdl-cell--2-offset">
+        <h2 class="mdl-color-text--white">
+            {{$ctrl.statement}}
+        </h2>
+    </div>
+</div>
+
+<div class="mdl-grid" ng-switch="$ctrl.questionType">
+    <div ng-switch-when="button" class="mdl-cell mdl-cell--12-col mdl-typography--text-center" >
+        <span ng-repeat="answer in $ctrl.answers">
+            <button ng-click="$ctrl.getAnswer(answer.value)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--white center">
+                {{answer.name}}<!--<i class="material-icons">check</i>-->
+            </button>
+        </span>
+    </div>
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col mdl-cell--2-offset-desktop mdl-cell--bottom">
+        <div ng-repeat="answer in $ctrl.answers">
+            <div class="mdl-cell mdl-cell--12-col">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                    <input type="radio" class="mdl-radio__button" name="close-question-radio" value="answer.value">
+                    <span class="mdl-radio__label text-medium-size">{{answer.name}}</span>
+                </label>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--middle" ng-if="$ctrl.questionType === 'radio'">
+        <button ng-click="$ctrl.getAnswer()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
+            <i class="material-icons">arrow_forward</i>
+        </button>
+    </div>
+</div>

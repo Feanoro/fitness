@@ -8,7 +8,8 @@
         "bower-asset/angular-animate": "^1.5",
         "bower-asset/material-design-lite": "^1.1",
         "bower-asset/angular-sanitize": "^1.5",
-        "bower-asset/material-design-icons": "^2.2"
+        "bower-asset/material-design-icons": "^2.2",
+        "bower-asset/dialog-polyfill": "^0.4.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.4"

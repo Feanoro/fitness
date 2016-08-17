@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12f5b01f15f1c83ff719fc463709d7b8",
-    "content-hash": "ea3eb1ea68af82aa6e7ebacc10858b91",
+    "hash": "0f749b1871d0ef1bc3a96b437f47d48b",
+    "content-hash": "591d71c871a52297263f91f7e3392ef8",
     "packages": [
         {
             "name": "bower-asset/angular",
@@ -129,6 +129,48 @@
             },
             "license": [
                 "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/dialog-polyfill",
+            "version": "0.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoogleChrome/dialog-polyfill.git",
+                "reference": "35ea2a3cc5d72acd299d24a07f291fd99728c7eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoogleChrome/dialog-polyfill/zipball/35ea2a3cc5d72acd299d24a07f291fd99728c7eb",
+                "reference": "35ea2a3cc5d72acd299d24a07f291fd99728c7eb",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bower-asset/chai": "*",
+                "bower-asset/mocha": "*"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dialog-polyfill.js",
+                    "dialog-polyfill.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "BSD"
+            ],
+            "description": "Polyfill for the <dialog> element",
+            "keywords": [
+                "dialog",
+                "html5",
+                "polyfill"
             ]
         },
         {
