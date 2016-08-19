@@ -6,16 +6,16 @@ angular.module('fitnessApp')
         $locationProvider.hashPrefix('!');
         $routeProvider.
         when('/', {
-            template: '<index update-background-color="updateColor(color)" toggle-menu-visibility="toggleMenuVisibility(visible)"></index>'
+            template: '<index toggle-menu-visibility="toggleMenuVisibility(visible)"></index>'
         }).
         when('/register', {
-            template: '<register update-background-color="updateColor(color)"></register>'
+            template: '<register></register>'
         }).
         when('/close-question', {
-            template: '<qt-close-question update-background-color="updateColor(color)" ></qt-close-question>'
+            template: '<qt-close-question></qt-close-question>'
         }).
         when('/close-question-radio', {
-            template: '<qt-close-question update-background-color="updateColor(color)" question-type="radio"></qt-close-question>'
+            template: '<qt-close-question options-type="radio"></qt-close-question>'
         }).
         when('/open', {
             template: '<qt-open update-background-color="updateColor(color)"></qt-open>'
@@ -24,11 +24,10 @@ angular.module('fitnessApp')
             template: '<qt-multiple-selection update-background-color="updateColor(color)"></qt-multiple-selection>'
         }).
         when('/multiple-img-block', {
-            template: '<qt-multiple-selection update-background-color="updateColor(color)" question-type="img-block"></qt-multiple-selection>'
+            template: '<qt-multiple-selection options-type="img-block"></qt-multiple-selection>'
         }).
         when('/close-question-multiple', {
-            template: '<qt-close-question update-background-color="updateColor(color)" ></qt-close-question>' +
-                        '<qt-multiple-selection update-background-color="updateColor(color)"></qt-multiple-selection>'
+            templateUrl: 'template/close-question-multiple.html'
         }).
         otherwise('/');
     }

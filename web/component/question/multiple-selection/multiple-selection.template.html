@@ -1,45 +1,45 @@
 <div class="md-grid">
-    <div class="mdl-cell mdl-cell--6-col mdl-cell--2-offset">
+    <div class="mdl-cell mdl-cell--7-col mdl-cell--2-offset">
         <h2 class="mdl-color-text--white">
             {{$ctrl.statement}}
         </h2>
     </div>
 </div>
 
-<div class="mdl-grid" ng-switch="$ctrl.questionType">
+<div class="mdl-grid" ng-switch="$ctrl.optionsType">
     <div ng-switch-when="checkbox" class="mdl-cell mdl-cell--6-col mdl-cell--2-offset-desktop mdl-cell--bottom">
-        <div ng-repeat="answer in $ctrl.answers">
+        <div ng-repeat="(key, option) in $ctrl.options">
             <div class="mdl-cell mdl-cell--12-col">
                 <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                    <input type="checkbox" class="mdl-checkbox__input" name="" value="answer.value">
-                    <span class="mdl-checkbox__label text-medium-size">{{answer.name}}</span>
+                    <input ng-model="option.answer" type="checkbox" class="mdl-checkbox__input" name="{{'option-' + key}}">
+                    <span class="mdl-checkbox__label text-medium-size">{{option.name}}</span>
                 </label>
             </div>
         </div>
     </div>
     <div ng-switch-when="img-block" class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col" ng-repeat="answer in $ctrl.answers">
-                <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('{{answer.src}}') center / cover;">
+            <div class="mdl-cell mdl-cell--4-col" ng-repeat="(key, option) in $ctrl.options">
+                <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('{{option.img_src}}') center / cover;">
                     <div class="mdl-card__title mdl-card--expand"></div>
                     <div class="mdl-card__actions">
                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect demo-card-image__filename">
-                            <input type="checkbox" class="mdl-checkbox__input" name="" value="answer.value">
-                            <span class="mdl-checkbox__label text-medium-size">{{answer.name}}</span>
+                            <input ng-model="option.answer" type="checkbox" class="mdl-checkbox__input" name="{{'option-' + key}}">
+                            <span class="mdl-checkbox__label text-medium-size">{{option.name}}</span>
                         </label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div ng-if="$ctrl.questionType === 'checkbox'" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
-        <button ng-click="$ctrl.getAnswer()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
+    <div ng-if="$ctrl.optionsType === 'checkbox'" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
+        <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
             <i class="material-icons">arrow_forward</i>
         </button>
     </div>
 </div>
-<div ng-if="$ctrl.questionType === 'img-block'" class="mdl-cell-12-col mdl-typography--text-center">
-    <button ng-click="$ctrl.getAnswer()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
+<div ng-if="$ctrl.optionsType === 'img-block'" class="mdl-cell-12-col mdl-typography--text-center">
+    <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
         Proceed
     </button>
 </div>
