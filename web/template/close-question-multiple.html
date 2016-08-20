@@ -1,1 +1,10 @@
-<question-handler ng-repeat="type in types" type="{{type}}"></question-handler>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--middle">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+            <i class="material-icons">arrow_backward</i>
+        </button>
+    </div>
+    <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop">
+        <question-handler ng-repeat="type in types" type="{{type}}"></question-handler>
+    </div>
+</div>

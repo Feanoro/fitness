@@ -1,5 +1,5 @@
 <div ng-switch="$ctrl.type">
-    <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)"></qt-close-question>
-    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)"></qt-multiple-selection>
-    <qt-open ng-switch-when="qt-open"></qt-open>
+    <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)" options-type="radio"></qt-close-question>
+    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" options-type="img-block"></qt-multiple-selection>
+    <qt-open-question ng-switch-when="qt-open-question" on-question-answered="$ctrl.saveAnswer(data)" options-type="textarea"></qt-open-question>
 </div>

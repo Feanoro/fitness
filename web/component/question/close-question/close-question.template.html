@@ -1,10 +1,10 @@
-<div class="md-grid" ng-switch="$ctrl.optionsType">
-    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
+<div class="md.-grid--outline" ng-switch="$ctrl.optionsType">
+    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col">
         <h2 class="mdl-color-text--white mdl-typography--text-center">
             {{$ctrl.statement}}
         </h2>
     </div>
-    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col mdl-cell--2-offset">
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col">
         <h2 class="mdl-color-text--white">
             {{$ctrl.statement}}
         </h2>
@@ -12,14 +12,14 @@
 </div>
 
 <div class="mdl-grid" ng-switch="$ctrl.optionsType">
-    <div ng-switch-when="button" class="mdl-cell mdl-cell--12-col mdl-typography--text-center" >
+    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col mdl-typography--text-center" >
         <span ng-repeat="option in $ctrl.options">
             <button ng-click="$ctrl.answerQuestion(option)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--white center">
                 {{option.name}}<!--<i class="material-icons">check</i>-->
             </button>
         </span>
     </div>
-    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col mdl-cell--2-offset-desktop mdl-cell--bottom">
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col">
         <div ng-repeat="(key, option) in $ctrl.options">
             <div class="mdl-cell mdl-cell--12-col">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">

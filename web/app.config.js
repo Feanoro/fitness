@@ -18,7 +18,7 @@ angular.module('fitnessApp')
             template: '<qt-close-question options-type="radio"></qt-close-question>'
         }).
         when('/open', {
-            template: '<qt-open update-background-color="updateColor(color)"></qt-open>'
+            template: '<qt-open-question></qt-open-question>'
         }).
         when('/multiple', {
             template: '<qt-multiple-selection update-background-color="updateColor(color)"></qt-multiple-selection>'
@@ -28,6 +28,9 @@ angular.module('fitnessApp')
         }).
         when('/close-question-multiple', {
             templateUrl: 'template/close-question-multiple.html'
+        }).
+        when('/quiz', {
+            templateUrl: 'template/quiz.html'
         }).
         otherwise('/');
     }

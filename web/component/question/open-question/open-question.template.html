@@ -1,0 +1,26 @@
+<div class="md-grid">
+    <div class="mdl-cell mdl-cell--8-col">
+        <h2 class="mdl-color-text--white mdl-typography--text-center">
+            {{$ctrl.statement}}
+        </h2>
+    </div>
+</div>
+<div class="mdl-grid" ng-switch="$ctrl.optionsType">
+    <div ng-switch-when="textfield" class="mdl-cell mdl-cell--2-col mdl-cell--3-offset-desktop mdl-typography--text-center">
+        <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
+            <input ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Type your hours</label>
+        </div>
+    </div>
+    <div ng-switch-when="textarea" class="mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-typography--text-center">
+        <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
+            <textarea ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" rows= "3" id="answer" ></textarea>
+            <label class="mdl-textfield__label" for="answer">Write your answer here...</label>
+        </div>
+    </div>
+    <!--<div class="mdl-cell mdl-cell--1-col mdl-cell--middle">
+        <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect ">
+            <i class="material-icons">arrow_forward</i>
+        </button>
+    </div>-->
+</div>

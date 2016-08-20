@@ -10,5 +10,5 @@ angular.module('fitnessApp')
             $scope.menu_visibility = visible;
         };
 
-        $scope.types = ["qt-close-question","qt-multiple-selection"];
+        $scope.types = ["qt-open-question","qt-close-question","qt-multiple-selection"];
     });

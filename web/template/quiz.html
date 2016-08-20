@@ -1,0 +1,10 @@
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar mdl-cell--6-col-desktop mdl-cell--3-offset-desktop">
+        <a href="#{{type + '-' +  key}}" class="mdl-tabs__tab mdl-color-text--white" ng-repeat="(key, type) in types">{{type}}</a>
+    </div>
+    <div class="mdl-tabs__panel" id="{{type + '-' +  key}}" ng-repeat="(key, type) in types" type="{{type}}">
+        <div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop">
+            <question-handler type="{{type}}"></question-handler>
+        </div>
+    </div>
+</div>
