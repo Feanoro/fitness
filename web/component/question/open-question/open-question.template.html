@@ -1,12 +1,12 @@
 <div class="md-grid">
     <div class="mdl-cell mdl-cell--8-col">
-        <h2 class="mdl-color-text--white mdl-typography--text-center">
+        <h2 class="mdl-color-text--white mdl-typography--text-{{$ctrl.align}}">
             {{$ctrl.statement}}
         </h2>
     </div>
 </div>
 <div class="mdl-grid" ng-switch="$ctrl.optionsType">
-    <div ng-switch-when="textfield" class="mdl-cell mdl-cell--2-col mdl-cell--3-offset-desktop mdl-typography--text-center">
+    <div ng-switch-when="textfield" class="mdl-cell mdl-cell--2-col {{$ctrl.textfield_align}} mdl-typography--text-center">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
             <input ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" id="sample1">
             <label class="mdl-textfield__label" for="sample1">Type your hours</label>
