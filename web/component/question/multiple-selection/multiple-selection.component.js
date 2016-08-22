@@ -50,6 +50,9 @@ angular.module('question')
         controller: multipleSelectionController,
         bindings: {
             statementAlign: "@",
+            statement: "<",
+            options: "=",
+            config: "<",
             optionsType: "@",
             onQuestionAnswered: "&"
         }

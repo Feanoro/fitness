@@ -27,3 +27,16 @@ body{
     font-size: 14px;
     font-weight: 500;
 }
+
+.card-wide {
+    width: 150px;
+}
+/*
+.card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+.card-square > .mdl-card__title {
+    color: #fff;
+    background: url('{{$ctrl.data.img_src}}') center / cover;
+}*/

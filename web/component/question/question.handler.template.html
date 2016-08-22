@@ -1,5 +1,6 @@
-<div ng-switch="$ctrl.type">
-    <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)" options-type="radio"></qt-close-question>
-    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" options-type="img-block"></qt-multiple-selection>
-    <qt-open-question ng-switch-when="qt-open-question" on-question-answered="$ctrl.saveAnswer(data)" align="left"></qt-open-question>
+{{$ctrl}}
+<div ng-switch="$ctrl.data.type">
+    <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-close-question>
+    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" options-type="img-block" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-multiple-selection>
+    <!--<qt-open-question ng-switch-when="qt-open-question" on-question-answered="$ctrl.saveAnswer(data)" align="left" options-type="img-left"></qt-open-question>-->
 </div>

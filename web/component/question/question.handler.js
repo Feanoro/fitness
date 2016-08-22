@@ -14,6 +14,7 @@ angular.module('question')
         controller: questionHandlerController,
         templateUrl: 'component/question/question.handler.template.html',
         bindings: {
-            type: "@"
+            type: "@",
+            data: "<"
         }
     });
