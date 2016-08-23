@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f749b1871d0ef1bc3a96b437f47d48b",
+    "hash": "2765140bd0a528e676d4294cb0a9b916",
     "content-hash": "591d71c871a52297263f91f7e3392ef8",
     "packages": [
         {
@@ -201,16 +201,16 @@
         },
         {
             "name": "bower-asset/material-design-lite",
-            "version": "v1.1.3",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/material-design-lite.git",
-                "reference": "b3eee10210ceff6f04d3bd3ac34518c86ab585c7"
+                "reference": "a221380c3ca6fd1e9502491051f7f28052dd45b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/material-design-lite/zipball/b3eee10210ceff6f04d3bd3ac34518c86ab585c7",
-                "reference": "b3eee10210ceff6f04d3bd3ac34518c86ab585c7",
+                "url": "https://api.github.com/repos/google/material-design-lite/zipball/a221380c3ca6fd1e9502491051f7f28052dd45b2",
+                "reference": "a221380c3ca6fd1e9502491051f7f28052dd45b2",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -246,12 +246,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "9b549818fdfee69381b5723f95012ab5060fd556"
+                "reference": "cd6fe00dbd68b10e79319ef68caaef8982d0602a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/9b549818fdfee69381b5723f95012ab5060fd556",
-                "reference": "9b549818fdfee69381b5723f95012ab5060fd556",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/cd6fe00dbd68b10e79319ef68caaef8982d0602a",
+                "reference": "cd6fe00dbd68b10e79319ef68caaef8982d0602a",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +331,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2016-08-04 21:53:53"
+            "time": "2016-08-20 09:17:56"
         },
         {
             "name": "propel/propel1",
@@ -708,12 +708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "5f3f7e736d6319d5f1fc402aff8b026da26709a3"
+                "reference": "bb1c920291e2db3d3e50b77aded8bbfc351d3ff5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/5f3f7e736d6319d5f1fc402aff8b026da26709a3",
-                "reference": "5f3f7e736d6319d5f1fc402aff8b026da26709a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/bb1c920291e2db3d3e50b77aded8bbfc351d3ff5",
+                "reference": "bb1c920291e2db3d3e50b77aded8bbfc351d3ff5",
                 "shasum": ""
             },
             "require": {
@@ -763,7 +763,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-07-26 14:39:29"
+            "time": "2016-08-19 13:51:08"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -948,16 +948,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "dev-master",
+            "version": "5.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9a1432374fecc9165d464748b11e7022063b9e1f"
+                "reference": "6346531bfd3dc1bb3ecb9d2f53bade04c6ba0e14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9a1432374fecc9165d464748b11e7022063b9e1f",
-                "reference": "9a1432374fecc9165d464748b11e7022063b9e1f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6346531bfd3dc1bb3ecb9d2f53bade04c6ba0e14",
+                "reference": "6346531bfd3dc1bb3ecb9d2f53bade04c6ba0e14",
                 "shasum": ""
             },
             "require": {
@@ -996,7 +996,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.6.x-dev"
+                    "dev-master": "5.7.x-dev"
                 }
             },
             "autoload": {
@@ -1022,7 +1022,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-08-10 05:03:51"
+            "time": "2016-08-20 09:56:59"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1030,12 +1030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "363392d7d849dc05902d88cc1d7046805b6b5f2d"
+                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/363392d7d849dc05902d88cc1d7046805b6b5f2d",
-                "reference": "363392d7d849dc05902d88cc1d7046805b6b5f2d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/4e83390f64e7ce04fcaec2ce95cd72823b431d19",
+                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-07-02 15:30:03"
+            "time": "2016-08-17 09:33:51"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -1250,12 +1250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "a13903bf5fd0239748fe322dfbdd5f5720ab20e6"
+                "reference": "b429478521ee551c5622fec271a2b3bf99de1619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/a13903bf5fd0239748fe322dfbdd5f5720ab20e6",
-                "reference": "a13903bf5fd0239748fe322dfbdd5f5720ab20e6",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/b429478521ee551c5622fec271a2b3bf99de1619",
+                "reference": "b429478521ee551c5622fec271a2b3bf99de1619",
                 "shasum": ""
             },
             "require": {
@@ -1292,7 +1292,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-06-11 08:54:23"
+            "time": "2016-08-18 05:48:30"
         },
         {
             "name": "sebastian/exporter",
@@ -1602,12 +1602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "80944546b4014ce240dbeafabc2a3aec9e4794e1"
+                "reference": "5b61eed69891b2add260a3741660fa68c38900ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/80944546b4014ce240dbeafabc2a3aec9e4794e1",
-                "reference": "80944546b4014ce240dbeafabc2a3aec9e4794e1",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/5b61eed69891b2add260a3741660fa68c38900ae",
+                "reference": "5b61eed69891b2add260a3741660fa68c38900ae",
                 "shasum": ""
             },
             "require": {
@@ -1649,7 +1649,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-08-09 13:44:53"
+            "time": "2016-08-13 18:49:42"
         },
         {
             "name": "webmozart/assert",
@@ -1657,16 +1657,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "1dc8bdd49e54b9b936858dd422096f349e367a85"
+                "reference": "8444f2ac9f86342665cdae47b6d3ea6e07794456"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/1dc8bdd49e54b9b936858dd422096f349e367a85",
-                "reference": "1dc8bdd49e54b9b936858dd422096f349e367a85",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/8444f2ac9f86342665cdae47b6d3ea6e07794456",
+                "reference": "8444f2ac9f86342665cdae47b6d3ea6e07794456",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3|^7.0"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -1699,7 +1699,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-08-09 15:02:38"
+            "time": "2016-08-18 09:30:53"
         }
     ],
     "aliases": [],

@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<div class="mdl-grid" ng-switch="$ctrl.optionsType">
+<div class="mdl-grid" ng-switch="$ctrl.config.optionsType">
     <div ng-switch-when="checkbox" class="mdl-cell mdl-cell--8-col mdl-cell--bottom">
         <div class="mdl-cell mdl-cell--12-col" ng-repeat="(key, option) in $ctrl.options">
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">

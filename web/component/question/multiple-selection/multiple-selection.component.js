@@ -4,7 +4,7 @@ function multipleSelectionController($window)
 {
     var ctrl = this;
 
-    var default_statement = "What components of fitness are you most interested in training?";
+    /*var default_statement = "What components of fitness are you most interested in training?";
     var default_data = [
         {name: "Cardio. Train like a marathon runner.", answer: false},
         {name: "Strength. Train like a strongman/power lifter.", answer: false},
@@ -22,7 +22,7 @@ function multipleSelectionController($window)
     ];
 
     ctrl.statement = default_statement;
-    ctrl.options = default_data;
+    ctrl.options = default_data;*/
 
     ctrl.answerQuestion = function(){
         ctrl.onQuestionAnswered({data: ctrl.options});
@@ -36,11 +36,11 @@ function multipleSelectionController($window)
         if(!ctrl.statementAlign)
             ctrl.statementAlign = "center";
 
-        if(ctrl.optionsType === "img-block")
+        /*if(ctrl.optionsType === "img-block")
         {
             ctrl.statement = img_block_statement;
             ctrl.options = img_block_data;
-        }
+        }*/
     }
 }
 

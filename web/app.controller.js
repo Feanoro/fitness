@@ -43,7 +43,29 @@ angular.module('fitnessApp')
                 ],
                 config: {statementType: "img-left"}
             },*/
-            {type: "qt-multiple-selection", statement: "", options: [], config: {optionsType: "img-block"}},
+            {
+                type: "qt-multiple-selection", 
+                statement: "What components of fitness are you most interested in training?", 
+                options: [
+                    {name: "Cardio. Train like a marathon runner.", answer: false},
+                    {name: "Strength. Train like a strongman/power lifter.", answer: false},
+                    {name: "Flexibility. Train like a yoga master.", answer: false},
+                    {name: "Aesthetics. Train like a body builder.", answer: false},
+                    {name: "Sports Specific Training. Train like a sports athelete.", answer: false},
+                    {name: "Injury Prevention. Train to conserve yourself.", answer: false}                    
+                ], 
+                config: {optionsType: "checkbox"}
+            },
+            {
+                type: "qt-multiple-selection", 
+                statement: "Where would you be willing to train?", 
+                options: [
+                    {name: "Park", img_src: "http://localhost:8080/fitness/web/assets/img/park.jpg", answer: false},
+                    {name: "Home", img_src: "http://localhost:8080/fitness/web/assets/img/home.jpg", answer: false},
+                    {name: "Gym", img_src: "http://localhost:8080/fitness/web/assets/img/gym.jpg", answer: false}                    
+                ], 
+                config: {optionsType: "img-block"}
+            },            
             {type: "qt-open-question", statement: "", options: [], config: {optionsType: "textfield"}},
         ];
     });
