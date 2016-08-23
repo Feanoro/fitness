@@ -66,6 +66,53 @@ angular.module('fitnessApp')
                 ], 
                 config: {optionsType: "img-block"}
             },            
-            {type: "qt-open-question", statement: "", options: [], config: {optionsType: "textfield"}},
+            {
+                type: "qt-open-question", 
+                statement: "How many hours of sleep you get per day?",            
+                answer : "",
+                config: {
+                    optionsType: "textfield",
+                    label: "Type your ours"
+                }
+            },
+            {
+                type: "qt-open-question", 
+                statement: "How many hours of sleep you get per day?",            
+                answer : "",
+                config: {
+                    optionsType: "textfield",
+                    label: "Type your ours",
+                    align: "left"
+                }
+            },            
+            {
+                type: "qt-open-question", 
+                statement: "Please explain",                
+                answer : "",
+                config: {
+                    optionsType: "textarea",
+                    label: "Write your answer here..."
+                }
+            },   
+            {
+                type: "qt-open-question", 
+                statement: "Neck",                
+                answer : "",                                
+                config: {
+                    optionsType: "img-left",
+                    label: "Meassure",
+                    img_src: "http://localhost/fitness/web/assets/img/Neck.jpg" 
+                }
+            },   
+            {
+                type: "qt-open-question", 
+                statement: "Neck",                
+                answer : ["", ""],                                
+                config: {
+                    optionsType: "img-left",
+                    label: "Meassure",
+                    img_src: "http://localhost/fitness/web/assets/img/Neck.jpg" 
+                }
+            },                                            
         ];
     });

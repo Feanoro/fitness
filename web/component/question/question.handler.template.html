@@ -1,6 +1,6 @@
 {{$ctrl}}
 <div ng-switch="$ctrl.data.type">
     <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-close-question>
-    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" options-type="img-block" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-multiple-selection>
-    <!--<qt-open-question ng-switch-when="qt-open-question" on-question-answered="$ctrl.saveAnswer(data)" align="left" options-type="img-left"></qt-open-question>-->
+    <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-multiple-selection>
+    <qt-open-question ng-switch-when="qt-open-question" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" answer="$ctrl.data.answer" config="$ctrl.data.config"></qt-open-question>
 </div>
