@@ -8,14 +8,14 @@
 <div class="mdl-grid" ng-switch="$ctrl.config.optionsType">
     <div class="mdl-cell mdl-cell--2-col {{$ctrl.textfield_align}} mdl-typography--text-center" ng-switch-when="textfield">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
-            <input ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" id="textfield-answer">
-            <label class="mdl-textfield__label" for="textfield-answer">{{$ctrl.config.label}}</label>
+            <input ng-model="$ctrl.answer.value" class="mdl-textfield__input" type="text" id="textfield-answer">
+            <label class="mdl-textfield__label" for="textfield-answer">{{$ctrl.answer.label}}</label>
         </div>
     </div>
     <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-typography--text-center" ng-switch-when="textarea">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
-            <textarea ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" rows= "3" id="textarea-answer" ></textarea>
-            <label class="mdl-textfield__label" for="textarea-answer">{{$ctrl.config.label}}</label>
+            <textarea ng-model="$ctrl.answer.value" class="mdl-textfield__input" type="text" rows= "3" id="textarea-answer" ></textarea>
+            <label class="mdl-textfield__label" for="textarea-answer">{{$ctrl.answer.label}}</label>
         </div>
     </div>
 </div>
@@ -26,25 +26,16 @@
             <div style="background: url('{{$ctrl.config.img_src}}') center / cover; height: 150px;"></div>
             <h4 class="mdl-typography--text-center">{{$ctrl.statement}}</h4>
         </div>
-        <div class="mdl-cell mdl-cell--middle">
-            <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
-                <input ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" id="textfield-img-left-answer">
-                <label class="mdl-textfield__label" for="textfield-img-left-answer">{{$ctrl.config.label}}</label>
+        <div ng-switch="$ctrl.is_array" class="mdl-cell mdl-cell--middle">
+            <div ng-switch-when="false" class="mdl-textfield mdl-textfield--full-width mdl-js-textfield  mdl-textfield--floating-label">
+                <input ng-model="$ctrl.answer.value" class="mdl-textfield__input" name="answer" type="text" id="textfield-img-left-answer">
+                <label class="mdl-textfield__label" for="textfield-img-left-answer">{{$ctrl.answer.label}}</label>
+            </div>
+            <div ng-switch-when="true" ng-repeat="(key, obj) in $ctrl.answer" class="mdl-textfield mdl-textfield--full-width mdl-js-textfield  mdl-textfield--floating-label">
+                <input ng-model="obj.value" class="mdl-textfield__input" name="answer{{key}}" type="text" id="textfield-img-left-answer-{{key}}">
+                <label class="mdl-textfield__label" for="textfield-img-left-answer-{{key}}">{{obj.label}}</label>
             </div>
         </div>
-               
-        <!--<div class="mdl-cell mdl-cell--middle" ng-switch="angular.isArray($ctrl.answer)">
-            <div ng-switch-when="true">
-                <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield"  ng-repeat="answer in $ctrl.answer">
-                    <input ng-model="answer" class="mdl-textfield__input" type="text" id="textfield-img-left-answer">
-                    <label class="mdl-textfield__label" for="textfield-img-left-answer">{{$ctrl.config.label}}</label>
-                </div>
-            </div>
-            <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield" ng-switch-when="false">
-                <input ng-model="$ctrl.answer" class="mdl-textfield__input" type="text" id="textfield-img-left-answer">
-                <label class="mdl-textfield__label" for="textfield-img-left-answer">{{$ctrl.config.label}}</label>
-            </div>            
-        </div>-->
     </div>
 </div>
 <!--<div class="mdl-cell mdl-cell--1-col mdl-cell--middle">

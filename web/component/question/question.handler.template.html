@@ -1,4 +1,3 @@
-{{$ctrl}}
 <div ng-switch="$ctrl.data.type">
     <qt-close-question ng-switch-when="qt-close-question" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-close-question>
     <qt-multiple-selection ng-switch-when="qt-multiple-selection" on-question-answered="$ctrl.saveAnswer(data)" statement="$ctrl.data.statement" options="$ctrl.data.options" config="$ctrl.data.config"></qt-multiple-selection>

@@ -1,8 +1,8 @@
 'use strict';
 
-function openController(){
+function openController($window){
     var ctrl = this;
-
+    ctrl.is_array = false;
     ctrl.textfield_align = "mdl-cell--3-offset-desktop";
 
     ctrl.answerQuestion = function(){
@@ -18,7 +18,10 @@ function openController(){
 
         if(ctrl.config.align === "left")
             ctrl.textfield_align = "";
-    }
+
+        if(angular.isArray(ctrl.answer))
+            ctrl.is_array = true;
+    };
 }
 
 angular.module('question')
