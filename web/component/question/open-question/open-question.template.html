@@ -1,18 +1,18 @@
-<div class="md-grid" ng-if="$ctrl.config.optionsType === 'textfield' || $ctrl.config.optionsType === 'textarea'">
-    <div class="mdl-cell mdl-cell--8-col" >
+<div ng-if="$ctrl.config.optionsType === 'textfield' || $ctrl.config.optionsType === 'textarea'" class="md-grid">
+    <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset-tablet mdl-cell--1-offset-desktop" >
         <h2 class="mdl-color-text--white mdl-typography--text-{{$ctrl.config.align}}">
             {{$ctrl.statement}}
         </h2>
     </div>
 </div>
-<div class="mdl-grid" ng-switch="$ctrl.config.optionsType">
-    <div class="mdl-cell mdl-cell--2-col {{$ctrl.textfield_align}} mdl-typography--text-center" ng-switch-when="textfield">
+<div ng-switch="$ctrl.config.optionsType" class="mdl-grid">
+    <div ng-switch-when="textfield" class="mdl-cell mdl-cell--2-col mdl-cell--1-offset-tablet mdl-cell--1-offset-desktop {{$ctrl.textfield_align}} mdl-typography--text-center">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
             <input ng-model="$ctrl.answer.value" ng-change="$ctrl.answerQuestion()" class="mdl-textfield__input" type="text" id="textfield-answer">
             <label class="mdl-textfield__label" for="textfield-answer">{{$ctrl.answer.label}}</label>
         </div>
     </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-typography--text-center" ng-switch-when="textarea">
+    <div ng-switch-when="textarea" class="mdl-cell mdl-cell--4-col mdl-cell--2-offset-desktop mdl-typography--text-center">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
             <textarea ng-model="$ctrl.answer.value" ng-change="$ctrl.answerQuestion()" class="mdl-textfield__input" type="text" rows= "3" id="textarea-answer" ></textarea>
             <label class="mdl-textfield__label" for="textarea-answer">{{$ctrl.answer.label}}</label>

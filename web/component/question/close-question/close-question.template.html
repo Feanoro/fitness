@@ -1,26 +1,22 @@
 <div class="md-grid--outline" ng-switch="$ctrl.config.optionsType">
-    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col">
-        <h2 class="mdl-color-text--white mdl-typography--text-center">
-            {{$ctrl.statement}}
-        </h2>
+    <div class="mdl-cell mdl-cell--12-col">
+        <h2 ng-switch-when="button" class="mdl-color-text--white mdl-typography--text-center">{{$ctrl.statement}}</h2>
     </div>
-    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col">
-        <h2 class="mdl-color-text--white">
-            {{$ctrl.statement}}
-        </h2>
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--11-col mdl-cell--1-offset-tablet mdl-cell--1-offset-desktop" >
+        <h2 class="mdl-color-text--white">{{$ctrl.statement}}</h2>
     </div>
 </div>
 
-<div class="mdl-grid" ng-switch="$ctrl.config.optionsType">
-    <div ng-switch-when="button" class="mdl-cell mdl-cell--8-col mdl-typography--text-center" >
+<div ng-switch="$ctrl.config.optionsType" class="mdl-grid">
+    <div ng-switch-when="button" class="mdl-cell mdl-cell--12-col mdl-typography--text-center" >
         <span ng-repeat="option in $ctrl.options">
-            <button ng-click="$ctrl.answerQuestion(option)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--white center">
+            <button ng-click="$ctrl.answerQuestion(option)" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color-text--grey-700 mdl-color--white center">
                 {{option.name}}
             </button>
         </span>
     </div>
-    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col">
-        <div ng-repeat="(key, option) in $ctrl.options">
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--6-col mdl-cell--1-offset-tablet mdl-cell--1-offset-desktop">
+        <div ng-repeat="(key, option) in $ctrl.options" class="mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
                     <input ng-model="$ctrl.radiofield" ng-change="$ctrl.answerQuestion(option)" type="radio" class="mdl-radio__button" name="close-question-radio" value="{{key}}">
@@ -29,12 +25,16 @@
             </div>
         </div>
     </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--middle" ng-if="$ctrl.optionsType === 'radio'">
+    <div ng-switch-when="radio" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
         <button ng-click="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
             <i class="material-icons">arrow_forward</i>
         </button>
     </div>
-    <div ng-if="$ctrl.config.note !== undefined" class="mdl-cell mdl-cell--8-col">
-        <p class="mdl-typography--text-center">* {{$ctrl.config.note}} *</p>
+    <div ng-if="$ctrl.config.note !== undefined" class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
+            <span class="mdl-chip">
+                <span class="mdl-chip__text">* {{$ctrl.config.note}} *</span>
+            </span>
+        </div>
     </div>
 </div>
