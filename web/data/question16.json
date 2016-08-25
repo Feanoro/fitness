@@ -1,0 +1,21 @@
+[
+  {
+    "type": "qt-close-question",
+    "statement": "Do you have any nutritional deficiency?",
+    "options": [
+      {"name": "Yes", "answer": false},
+      {"name": "No", "answer": false}
+    ],
+    "config": {
+      "optionsType": "button"
+    }
+  },
+  {
+    "type": "qt-open-question",
+    "statement": "Please explain",
+    "answer": {"value": "", "label": "Write your answer here..."},
+    "config": {
+      "optionsType": "textarea"
+    }
+  }
+]

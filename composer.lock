@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2765140bd0a528e676d4294cb0a9b916",
+    "hash": "0f749b1871d0ef1bc3a96b437f47d48b",
     "content-hash": "591d71c871a52297263f91f7e3392ef8",
     "packages": [
         {
             "name": "bower-asset/angular",
-            "version": "v1.5.8",
+            "version": "v1.5.9-patch4999",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2"
+                "reference": "35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
-                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0",
+                "reference": "35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -32,20 +32,20 @@
         },
         {
             "name": "bower-asset/angular-animate",
-            "version": "v1.5.8",
+            "version": "v1.5.9-patch4999",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-animate.git",
-                "reference": "688b68844cf95420e1793327f69d0c25589c23d1"
+                "reference": "7bfe716ea62939a2c198be4f8a89fcd357db9590"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-animate/zipball/688b68844cf95420e1793327f69d0c25589c23d1",
-                "reference": "688b68844cf95420e1793327f69d0c25589c23d1",
+                "url": "https://api.github.com/repos/angular/bower-angular-animate/zipball/7bfe716ea62939a2c198be4f8a89fcd357db9590",
+                "reference": "7bfe716ea62939a2c198be4f8a89fcd357db9590",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.8"
+                "bower-asset/angular": "1.5.9-patch4999"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -58,20 +58,20 @@
         },
         {
             "name": "bower-asset/angular-route",
-            "version": "v1.5.8",
+            "version": "v1.5.9-patch4999",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-route.git",
-                "reference": "e96eff424fdd9689061659603ca59470375bf024"
+                "reference": "933a521568e0ad196a5f5348e7914c778562bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/e96eff424fdd9689061659603ca59470375bf024",
-                "reference": "e96eff424fdd9689061659603ca59470375bf024",
+                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/933a521568e0ad196a5f5348e7914c778562bacd",
+                "reference": "933a521568e0ad196a5f5348e7914c778562bacd",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.8"
+                "bower-asset/angular": "1.5.9-patch4999"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -84,20 +84,20 @@
         },
         {
             "name": "bower-asset/angular-sanitize",
-            "version": "v1.5.8",
+            "version": "v1.5.9-patch4999",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-sanitize.git",
-                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093"
+                "reference": "48cb536c8d5a575bcfba2b5cf3a918cd038f4bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-sanitize/zipball/380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
-                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
+                "url": "https://api.github.com/repos/angular/bower-angular-sanitize/zipball/48cb536c8d5a575bcfba2b5cf3a918cd038f4bb0",
+                "reference": "48cb536c8d5a575bcfba2b5cf3a918cd038f4bb0",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.8"
+                "bower-asset/angular": "1.5.9-patch4999"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -110,16 +110,16 @@
         },
         {
             "name": "bower-asset/angularjs",
-            "version": "v1.5.8",
+            "version": "v1.5.9-patch4999",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2"
+                "reference": "35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
-                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0",
+                "reference": "35435fc1a04063ff50bb30ecf449ac9a3e4b9dc0",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -246,12 +246,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "cd6fe00dbd68b10e79319ef68caaef8982d0602a"
+                "reference": "dba918daaa394c777cb7b7257f90f466850d8441"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/cd6fe00dbd68b10e79319ef68caaef8982d0602a",
-                "reference": "cd6fe00dbd68b10e79319ef68caaef8982d0602a",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/dba918daaa394c777cb7b7257f90f466850d8441",
+                "reference": "dba918daaa394c777cb7b7257f90f466850d8441",
                 "shasum": ""
             },
             "require": {
@@ -331,7 +331,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2016-08-20 09:17:56"
+            "time": "2016-08-23 11:50:17"
         },
         {
             "name": "propel/propel1",

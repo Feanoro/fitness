@@ -36,31 +36,76 @@ angular.module('fitnessApp')
             template: '<index toggle-menu-visibility="toggleMenuVisibility(visible)"></index>'
         }).
         when('/page-2', {
-            templateUrl: 'template/question-2.html'
+            templateUrl: 'template/question-2.html',
+            resolve: {
+                question2: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question2.json');
+                }
+            }
         }).
         when('/page-3', {
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question3"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question3"></question-handler></div></div>',
+            resolve: {
+                question3: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question3.json');
+                }
+            }
         }).
         when('/page-4', {
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question4"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question4"></question-handler></div></div>',
+            resolve: {
+                question4: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question4.json');
+                }
+            }
         }).
         when('/page-8', {
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question8"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question8"></question-handler></div></div>',
+            resolve: {
+                question8: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question8.json');
+                }
+            }
         }).
         when('/page-9',{
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question9"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question9"></question-handler></div></div>',
+            resolve: {
+                question9: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question9.json');
+                }
+            }
         }).
         when('/page-11',{
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question11"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question11"></question-handler></div></div>',
+            resolve: {
+                question11: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question11.json');
+                }
+            }
         }).
         when('/page-12',{
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler ng-repeat="question in question12" data="question"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler ng-repeat="question in $resolve.question12" data="question"></question-handler></div></div>',
+            resolve: {
+                question12: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question12.json');
+                }
+            }
         }).
         when('/page-15',{
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="question15"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler data="$resolve.question15"></question-handler></div></div>',
+            resolve: {
+                question15: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question15.json');
+                }
+            }
         }).
         when('/page-16', {
-            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler ng-repeat="question in question16" data="question"></question-handler></div></div>'
+            template: '<div class="mdl-grid"><div class="mdl-cell mdl-cell--2-offset mdl-cell--10-col"><question-handler ng-repeat="question in $resolve.question16" data="question"></question-handler></div></div>',
+            resolve: {
+                question16: function(getData){
+                    return getData('http://localhost:8080/fitness/web/data/question16.json');
+                }
+            }
         }).
         otherwise('/');
     }

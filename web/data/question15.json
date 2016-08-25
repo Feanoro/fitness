@@ -1,0 +1,18 @@
+{
+  "type": "qt-close-question",
+  "statement": "How many meals are you willing to eat per day?",
+  "options": [
+    {"name": "1", "answer": false},
+    {"name": "2", "answer": false},
+    {"name": "3", "answer": false},
+    {"name": "4", "answer": false},
+    {"name": "5", "answer": false},
+    {"name": "6", "answer": false},
+    {"name": "7", "answer": false},
+    {"name": "8", "answer": false}
+  ],
+  "config": {
+    "optionsType": "button",
+    "note": "Note: You´ll still be eating the same amount of calories per day"
+  }
+}

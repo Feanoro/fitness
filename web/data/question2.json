@@ -1,0 +1,49 @@
+[
+    {
+      "type": "qt-close-question",
+      "statement": "What measurement system are you most comfortable using?",
+      "options": [
+        {"name": "Metric", "answer": false},
+        {"name": "Imperial", "answer": false}
+      ],
+      "config": {
+        "optionsType": "button"
+      }
+    },
+    {
+      "type": "qt-open-question",
+      "statement": "How tall are you?",
+      "answer": {"value": "", "label": ""},
+      "config": {
+        "optionsType": "textfield",
+        "align": "left"
+      }
+    },
+    {
+      "type": "qt-open-question",
+      "statement": "How much do you weight?",
+      "answer": {"value": "", "label": ""},
+      "config": {
+        "optionsType": "textfield",
+        "align": "left"
+      }
+    },
+    {
+      "type": "qt-open-question",
+      "statement": "How much would you like to weight?",
+      "answer": {"value": "", "label": ""},
+      "config": {
+        "optionsType": "textfield",
+        "align": "left"
+      }
+    },
+    {
+      "type": "qt-open-question",
+      "statement": "Current body fat percentage. (Skip this question if you don’t know it.)",
+      "answer": {"value": "", "label": ""},
+      "config": {
+        "optionsType": "textfield",
+        "align": "left"
+      }
+    }
+]

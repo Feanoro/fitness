@@ -1,0 +1,8 @@
+{
+  "type": "qt-open-question",
+  "statement": "How many hours of sleep you get per day?",
+  "answer": {"value": "","label": "Type your hours"},
+  "config": {
+    "optionsType": "textfield"
+  }
+}

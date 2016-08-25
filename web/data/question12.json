@@ -1,0 +1,19 @@
+[
+  {
+    "type": "qt-close-question",
+    "statement": "Do you keep track of your caloric intake?",
+    "options": [
+      {"name": "Yes", "answer": false},
+      {"name": "No", "answer": false}
+    ],
+    "config": {"optionsType": "button"}
+  },
+  {
+    "type": "qt-open-question",
+    "statement": "How many calories do you consume a day?",
+    "answer" : {"value": "", "label": "Type your calories"},
+    "config": {
+      "optionsType": "textfield"
+    }
+  }
+]

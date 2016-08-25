@@ -1,0 +1,13 @@
+{
+  "type": "qt-close-question",
+  "statement": "When do you feel sore?",
+  "options": [
+    {"name": "0 - 12 hours after I perform exercise.", "answer": false},
+    {"name": "12 - 24 hours after I perform exercise.", "answer": false},
+    {"name": "24 - 48 hours after I perform exercise.", "answer": false},
+    {"name": "48 - 72 hours after I perform exercise.", "answer": false},
+    {"name": "I rarely ever get sore.", "answer": false},
+    {"name": "I’ve never felt sore in my entire life.", "answer": false}
+  ],
+  "config": {"optionsType": "radio"}
+}

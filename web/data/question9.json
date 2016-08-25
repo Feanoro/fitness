@@ -1,0 +1,10 @@
+{
+  "type": "qt-close-question",
+  "statement": "How do you usually sleep at night?",
+  "options": [
+    {"name": "Light", "answer": false},
+    {"name": "Medium", "answer": false},
+    {"name": "Deep", "answer": false}
+  ],
+  "config": {"optionsType": "button"}
+}
