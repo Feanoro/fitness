@@ -5,3 +5,10 @@ angular.module('fitnessApp')
 
 angular.module('fitnessApp')
     .constant('color_intensity', "400");
+
+angular.module('fitnessApp')
+    .constant('host', "http://localhost:8080/");
+    //.constant('host', "http://elitefitnessonlinetesting.com/");
+
+angular.module('fitnessApp')
+    .constant('app_path', 'fitness/web/');

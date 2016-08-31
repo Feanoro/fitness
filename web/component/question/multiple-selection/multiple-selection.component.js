@@ -1,6 +1,6 @@
 'use strict';
 
-function multipleSelectionController($window)
+function multipleSelectionController($window, $element)
 {
     var ctrl = this;
 
@@ -8,12 +8,34 @@ function multipleSelectionController($window)
         ctrl.onQuestionAnswered({data: ctrl.options});
     };
 
+    ctrl.imgInlineSelectOption = function(option){
+        option.answer = option.answer ? false : true;
+    };
+
+    var dialog = document.querySelector('dialog');
+    if (!dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+
+    ctrl.showModal = function(){
+        dialog.showModal();
+    };
+
+    //Dialog actions
+    ctrl.close = function(){
+        dialog.close();
+    };
+    ctrl.add = function(){
+        ctrl.options.push({name: ctrl.other_name, answer: true});
+        ctrl.close();
+    };
+
     ctrl.$onInit = function()
     {
-        if(!ctrl.optionsType)
+        if(angular.isUndefined(ctrl.config.optionsType))
             ctrl.optionsType = "checkbox";
 
-        if(!ctrl.config.statementAlign)
+        if(angular.isUndefined(ctrl.config.statementAlign))
             ctrl.config.statementAlign = "center";
     }
 }
@@ -26,7 +48,6 @@ angular.module('question')
             statement: "<",
             options: "=",
             config: "<",
-            optionsType: "@",
             onQuestionAnswered: "&"
         }
     });

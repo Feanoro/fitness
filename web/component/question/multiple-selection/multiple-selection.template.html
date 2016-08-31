@@ -1,3 +1,19 @@
+<dialog class="mdl-dialog">
+    <h5 class="mdl-dialog__title">Type your other equipment</h5>
+    <div class="mdl-dialog__content">
+        <p>
+            <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
+                <input ng-model="$ctrl.other_name" class="mdl-textfield__input" type="text" id="textfield-other">
+                <label class="mdl-textfield__label" for="textfield-other"></label>
+            </div>
+        </p>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="mdl-button" ng-click="$ctrl.add()">Add</button>
+        <button type="button" class="mdl-button" ng-click="$ctrl.close()">Close</button>
+    </div>
+</dialog>
+
 <div class="md-grid">
     <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset">
         <h2 class="mdl-color-text--white">{{$ctrl.statement}}</h2>
@@ -14,8 +30,9 @@
             </div>
         </div>
         <div ng-switch-when="img-block" class="mdl-grid">
+            <div class="mdl-cell--1-offset"></div>
             <div class="mdl-cell mdl-cell--3-col" ng-repeat="(key, option) in $ctrl.options">
-                <div class="demo-card-image mdl-card mdl-shadow--2dp" style="background: url('{{option.img_src}}') center / cover;">
+                <div class="mdl-card card-image mdl-shadow--2dp" style="background: url('{{option.img_src}}') center / cover;">
                     <div class="mdl-card__title mdl-card--expand"></div>
                     <div class="mdl-card__actions">
                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect demo-card-image__filename">
@@ -26,6 +43,37 @@
                 </div>
             </div>
         </div>
+        <div ng-switch-when="img-inline" class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col" ng-repeat="(key, option) in $ctrl.options">
+                <div box-checkbox ng-click="$ctrl.imgInlineSelectOption(option)" class="mdl-card card-square-checkbox mdl-shadow--2dp" style="background: url('{{option.img_src}}') center / cover;">
+                    <div class="mdl-card__title mdl-card--expand mdl-typography--text-center"><h4 class="full-width">{{option.name}}</h4></div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col">
+                <div ng-click="$ctrl.showModal()" class="mdl-card card-square-checkbox mdl-shadow--2dp" style="">
+                    <div class="mdl-card__title mdl-card--expand mdl-typography--text-center"><h4 class="full-width">Other</h4></div>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="img-left" class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col" ng-repeat="(key, option) in $ctrl.options">
+                <div class="mdl-cell card-wide pull-left">
+                    <div style="background: url('{{option.img_src}}') center / cover; height: 150px;"></div>
+                    <h4 class="mdl-typography--text-center">{{option.name}}</h4>
+                </div>
+                <div class="mdl-cell mdl-cell--middle pull-left">
+                    <label ng-repeat="suboption in option.options" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                        <input ng-model="suboption.answer" type="checkbox" class="mdl-checkbox__input" name="{{'suboption-' + key}}">
+                        <span class="mdl-checkbox__label text-medium-size">{{suboption.name}}</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div ng-switch-when="selectable-item-list" class="mdl-grid">
+            <ul class="mdl-list">
+                <li ng-repeat="(key, option) in $ctrl.options" class="mdl-list__item"><button class="mdl-button"></button>{{option.name}}</li>
+            </ul>
+        </div>
     </div>
     <div ng-if="$ctrl.config.optionsType === 'checkbox'" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
@@ -33,8 +81,8 @@
         </button>
     </div>
 </div>
-<div class="mdl-grid">
-    <div ng-if="$ctrl.config.optionsType === 'img-block'" class="mdl-cell-12-col mdl-typography--text-center">
+<div ng-if="$ctrl.config.optionsType === 'img-block' || $ctrl.config.optionsType === 'img-inline' || $ctrl.config.optionsType === 'img-left'" class="mdl-grid--outline">
+    <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset mdl-typography--text-center">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
             Proceed
         </button>

@@ -2,7 +2,7 @@
 <html lang="en" ng-app="fitnessApp">
 <head>
     <meta charset="UTF-8">
-    <title>Fitness App</title>
+    <title>Alpha</title>
 
     <!--Styles-->
     <link rel="stylesheet" href="../vendor/bower-asset/material-design-lite/material.min.css">
@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Dependency scripts-->
+    <script type="text/javascript" src="../vendor/bower-asset/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular/angular.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-sanitize/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/angular-animate/angular-animate.min.js"></script>
-    <script type="text/javascript" src="../vendor/bower-asset/material-design-lite/material.min.js"></script>
+    <script defer src="../vendor/bower-asset/material-design-lite/material.min.js"></script>
     <script type="text/javascript" src="../vendor/bower-asset/dialog-polyfill/dialog-polyfill.js"></script>
 
     <!--App Scripts-->
@@ -24,31 +25,35 @@
     <script type="text/javascript" src="app.controller.js"></script>
     <script type="text/javascript" src="app.constant.js"></script>
 
-    <!--Custom Services-->
-    <script type="text/javascript" src="services/random_background.js"></script>
-    <script type="text/javascript" src="services/get_data.js"></script>
+    <!--Custom Providers-->
+    <script type="text/javascript" src="providers/random_background.js"></script>
+    <script type="text/javascript" src="providers/create_url.js"></script>
+    <script type="text/javascript" src="providers/get_data.js"></script>
 
-    <!--Layout Scripts-->
+    <!--Custom Directives-->
+    <script type="text/javascript" src="directives/box-checkbox/box-checkbox.directive.js"></script>
+    <script type="text/javascript" src="directives/dialog/mydialog.directive.js"></script>
+
+    <!--Layout Components-->
     <script type="text/javascript" src="component/layout/layout.module.js"></script>
 
-    <!--Site Scripts-->
+    <!--Site Components-->
     <script type="text/javascript" src="component/site/site.module.js"></script>
     <script type="text/javascript" src="component/site/index/index.component.js"></script>
 
-    <!--User Scripts-->
+    <!--User Components-->
     <script type="text/javascript" src="component/user/user.js"></script>
     <script type="text/javascript" src="component/user/user.config.js"></script>
     <script type="text/javascript" src="component/user/register/register.component.js"></script>
     <script type="text/javascript" src="component/user/login/login.component.js"></script>
     <script type="text/javascript" src="component/user/logout/logout.component.js"></script>
 
-    <!--Question Scripts-->
+    <!--Question Components-->
     <script type="text/javascript" src="component/question/question.module.js"></script>
     <script type="text/javascript" src="component/question/question.handler.js"></script>
     <script type="text/javascript" src="component/question/close-question/close-question.component.js"></script>
     <script type="text/javascript" src="component/question/open-question/open-question.component.js"></script>
     <script type="text/javascript" src="component/question/multiple-selection/multiple-selection.component.js"></script>
-
 </head>
 <body ng-controller="mainController">
     <!-- Always shows a header, even in smaller screens. -->
@@ -73,7 +78,7 @@
             </div>
         </header>
         <div class="mdl-layout__drawer" ng-show="menu_visibility">
-            <span class="mdl-layout-title">Fitness App</span>
+            <span class="mdl-layout-title">Alpha</span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="#!/">Index</a>
                 <a class="mdl-navigation__link" href="#!/register">Register</a>
@@ -81,8 +86,9 @@
                 <a class="mdl-navigation__link" href="#!/page-2">Pagina 2</a>
                 <a class="mdl-navigation__link" href="#!/page-3">Pagina 3</a>
                 <a class="mdl-navigation__link" href="#!/page-4">Pagina 4</a>
+                <a class="mdl-navigation__link" href="#!/page-6">Pagina 6</a>
                 <a class="mdl-navigation__link" href="#!/page-8">Pagina 8</a>
-                <a class="mdl-navigation__link" href="#!/page-9">Pagina 8</a>
+                <a class="mdl-navigation__link" href="#!/page-9">Pagina 9</a>
                 <a class="mdl-navigation__link" href="#!/page-11">Pagina 11</a>
                 <a class="mdl-navigation__link" href="#!/page-12">Pagina 12</a>
                 <a class="mdl-navigation__link" href="#!/page-15">Pagina 15</a>
@@ -93,5 +99,30 @@
             <div class="page-content" ng-view><!-- Your content goes here --></div>
         </main>
     </div>
+    <!--<dialog class="mdl-dialog">
+        <h4 class="mdl-dialog__title">Allow data collection?</h4>
+        <div class="mdl-dialog__content">
+            <p>
+                Allowing us to collect data will let us get you the information you want faster.
+            </p>
+        </div>
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button">Agree</button>
+            <button type="button" class="mdl-button close">Disagree</button>
+        </div>
+    </dialog>
+    <script>
+        var dialog = document.querySelector('dialog');
+        var showDialogButton = document.querySelector('#show-dialog');
+        if (! dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        showDialogButton.addEventListener('click', function() {
+            dialog.showModal();
+        });
+        dialog.querySelector('.close').addEventListener('click', function() {
+            dialog.close();
+        });
+    </script>-->
 </body>
 </html>

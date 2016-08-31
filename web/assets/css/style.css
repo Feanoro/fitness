@@ -12,24 +12,49 @@ body{
     font-size: 24px !important;
 }
 
-.demo-card-image.mdl-card {
+.card-image.mdl-card {
     width: 100%;
     height: 256px;
     /*background: url('../assets/demos/image_card.jpg') center / cover;*/
 }
-.demo-card-image > .mdl-card__actions {
+.card-image > .mdl-card__actions {
     height: 52px;
     padding: 16px;
-    background: rgba(50, 50, 50, 0.62);;
+    background: rgba(50, 50, 50, 0.62);
 }
-.demo-card-image__filename {
+.card-image__filename {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
 }
-
 .card-wide {
     width: 150px;
+}
+
+.card-square-checkbox.mdl-card{
+    width: 180px;
+    min-height: 180px;
+    cursor: pointer;
+}
+.card-square-checkbox > .mdl-card__title{
+    background: rgba(50, 50, 50, 0.62);
+    color: white;
+}
+.card-square-checkbox:hover{
+    border: 1px solid black;
+}
+.selected{
+    border: 1px solid black;
+}
+.pull-left{
+    float:left;
+}
+.full-width{
+    width:100%;
+}
+
+._dialog_overlay{
+    z-index: 0 !important;
 }
 /*
 .card-square.mdl-card {

@@ -1,0 +1,24 @@
+{
+  "type": "qt-multiple-selection",
+  "statement": "Select all the equipment you have for training.",
+  "options": [
+    {"name": "Dumbbells", "img_src": "assets/img/dumbbells.jpg", "answer": false},
+    {"name": "Barbell", "img_src": "assets/img/barbell.jpg", "answer": false},
+    {"name": "Bench", "img_src": "assets/img/bench.jpg", "answer": false},
+    {"name": "Foam Roll", "img_src": "assets/img/foam_roll.jpg", "answer": false},
+    {"name": "Pull-Up Bar", "img_src": "assets/img/pull_up_bar.jpg", "answer": false},
+    {"name": "Resistance Bands", "img_src": "assets/img/resistance_bands.jpg", "answer": false},
+    {"name": "Mini-Bands", "img_src": "assets/img/minibands.jpg", "answer": false},
+    {"name": "Stretch Bands", "img_src": "assets/img/stretch_bands.jpg", "answer": false},
+    {"name": "Cables", "img_src": "assets/img/cables.jpg", "answer": false},
+    {"name": "Kettlebells", "img_src": "assets/img/kettlebells.jpg", "answer": false},
+    {"name": "Battle Ropes", "img_src": "assets/img/battle_ropes.jpg", "answer": false},
+    {"name": "TRX", "img_src": "assets/img/trx.jpg", "answer": false},
+    {"name": "Elliptical", "img_src": "assets/img/elliptical.jpg", "answer": false},
+    {"name": "Stationary Bike", "img_src": "assets/img/spinning_bicycle.jpg", "answer": false},
+    {"name": "Treadmill", "img_src": "assets/img/treadmill.jpg", "answer": false},
+    {"name": "Bosu-Ball", "img_src": "assets/img/bosu_ball.jpg", "answer": false},
+    {"name": "Yoga Ball", "img_src": "assets/img/yoga_ball.jpg", "answer": false}
+  ],
+  "config": {"optionsType": "img-inline"}
+}

@@ -4,6 +4,7 @@
 angular.module('fitnessApp', [
     'ngRoute',
     'ngAnimate',
+    'ngSanitize',
     'layout',
     'site',
     'user',

@@ -39,7 +39,7 @@ angular.module('fitnessApp')
             templateUrl: 'template/question-2.html',
             resolve: {
                 question2: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question2.json');
+                    return getData('data/question2.json');
                 }
             }
         }).
@@ -47,7 +47,7 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question3"></question-handler>',
             resolve: {
                 question3: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question3.json');
+                    return getData('data/question3.json');
                 }
             }
         }).
@@ -55,7 +55,23 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question4"></question-handler>',
             resolve: {
                 question4: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question4.json');
+                    return getData('data/question4.json');
+                }
+            }
+        }).
+        when('/page-6', {
+            template: '<question-handler data="$resolve.question6"></question-handler>',
+            resolve: {
+                question6: function(getData){
+                    return getData('data/question6.json');
+                }
+            }
+        }).
+        when('/page-7', {
+            template: '<question-handler data="$resolve.question7"></question-handler>',
+            resolve: {
+                question7: function(getData){
+                    return getData('data/question7.json');
                 }
             }
         }).
@@ -63,7 +79,7 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question8"></question-handler>',
             resolve: {
                 question8: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question8.json');
+                    return getData('data/question8.json');
                 }
             }
         }).
@@ -71,7 +87,7 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question9"></question-handler>',
             resolve: {
                 question9: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question9.json');
+                    return getData('data/question9.json');
                 }
             }
         }).
@@ -79,7 +95,7 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question11"></question-handler>',
             resolve: {
                 question11: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question11.json');
+                    return getData('data/question11.json');
                 }
             }
         }).
@@ -87,7 +103,15 @@ angular.module('fitnessApp')
             template: '<question-handler ng-repeat="question in $resolve.question12" data="question"></question-handler>',
             resolve: {
                 question12: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question12.json');
+                    return getData('data/question12.json');
+                }
+            }
+        }).
+        when('/page-13',{
+            template: '<question-handler data="$resolve.question13"></question-handler>',
+            resolve: {
+                question13: function(getData){
+                    return getData('data/question13.json');
                 }
             }
         }).
@@ -95,7 +119,7 @@ angular.module('fitnessApp')
             template: '<question-handler data="$resolve.question15"></question-handler>',
             resolve: {
                 question15: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question15.json');
+                    return getData('data/question15.json');
                 }
             }
         }).
@@ -103,7 +127,7 @@ angular.module('fitnessApp')
             template: '<question-handler ng-repeat="question in $resolve.question16" data="question"></question-handler>',
             resolve: {
                 question16: function(getData){
-                    return getData('http://localhost:8080/fitness/web/data/question16.json');
+                    return getData('data/question16.json');
                 }
             }
         }).

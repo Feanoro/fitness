@@ -1,0 +1,133 @@
+{
+  "type": "qt-multiple-selection",
+  "statement": "Select the goals you have for each body part.",
+  "options": [
+    {
+      "name": "Traps",
+      "img_src": "assets/img/traps.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+    ]},
+    {
+      "name": "Chest",
+      "img_src": "assets/img/chest 2.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Biceps",
+      "img_src": "assets/img/biceps.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Triceps",
+      "img_src": "assets/img/Triceps.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Middle Back",
+      "img_src": "assets/img/Upper-Middle_back.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Lower Back",
+      "img_src": "assets/img/lower_back.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Lats",
+      "img_src": "assets/img/lats.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Obliques",
+      "img_src": "assets/img/obliques.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Abs",
+      "img_src": "assets/img/abs.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Glutes",
+      "img_src": "assets/img/glutes.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Quadriceps",
+      "img_src": "assets/img/quads.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Hamstrings",
+      "img_src": "assets/img/hamstrings.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Hip Flexors",
+      "img_src": "assets/img/Hip_flexors.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]},
+    {
+      "name": "Calves",
+      "img_src": "assets/img/calves.jpg",
+      "options": [
+        {"name": "Power", "answer": false},
+        {"name": "Strength", "answer": false},
+        {"name": "Gain", "answer": false},
+        {"name": "Cut", "answer": false}
+      ]}
+  ],
+  "config": {"optionsType": "img-left"}
+}
