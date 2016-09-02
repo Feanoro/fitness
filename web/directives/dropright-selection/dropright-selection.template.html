@@ -7,7 +7,7 @@
     <div class="mdl-cell--10-col dropright-selection-item-container">
         <div class="mdl-grid">
             <div ng-repeat="option in options" class="mdl-cell mdl-cell--2-col-desktop mdl-cell--4-col-phone mdl-cell--8-col-tablet dropright-selection-item">
-                <img ng-click="toggleAnswer(option)" class="option" ng-src="{{option.img_src}}">
+                <img box-checkbox ng-click="toggleAnswer(option)" class="option" ng-src="{{option.img_src}}">
             </div>
         </div>
     </div>

@@ -49,6 +49,9 @@ body{
 .pull-left{
     float:left;
 }
+.clearfix{
+    clear:both;
+}
 .full-width{
     width:100%;
 }

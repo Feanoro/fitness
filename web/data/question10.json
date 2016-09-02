@@ -1,0 +1,23 @@
+[
+  {
+    "type": "qt-close-question",
+    "statement": "Do you usually take naps?",
+    "options" : [
+      {"name": "Yes", "answer": false},
+      {"name": "No", "answer": false}
+    ],
+    "config": {
+      "optionsType": "button"
+    }
+  },
+  {
+    "type": "qt-multiple-textfield",
+    "statement": "How many?",
+    "answer": [],
+    "config": {
+        "answerLabel": "Nap",
+        "answerInputPrefix": "mins",
+        "showAnswerIndex": true
+    }
+  }
+]

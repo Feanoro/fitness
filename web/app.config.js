@@ -91,6 +91,14 @@ angular.module('fitnessApp')
                 }
             }
         }).
+        when('/page-10',{
+            template: '<question-handler ng-repeat="question in $resolve.question10" data="question"></question-handler>',
+            resolve: {
+                question10: function(getData){
+                    return getData('data/question10.json');
+                }
+            }
+        }).
         when('/page-11',{
             template: '<question-handler data="$resolve.question11"></question-handler>',
             resolve: {
