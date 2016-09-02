@@ -4,102 +4,101 @@
   "options": [
     {
       "name": "Dark-green vegetables",
-      "img_src": "assets/img/traps.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Red and orange vegetables",
       "img_src": "assets/img/chest 2.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Beans / peas",
       "img_src": "assets/img/biceps.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Starchy vegetables",
       "img_src": "assets/img/Triceps.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Fruits",
       "img_src": "assets/img/Upper-Middle_back.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Dairy",
       "img_src": "assets/img/lower_back.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Grains",
       "img_src": "assets/img/lats.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Protein",
       "img_src": "assets/img/obliques.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Animal fat",
       "img_src": "assets/img/abs.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     },
     {
       "name": "Vegetable fat",
       "img_src": "assets/img/glutes.jpg",
       "options": [
-        {"name": "Power", "answer": false},
-        {"name": "Strength", "answer": false},
-        {"name": "Gain", "answer": false},
-        {"name": "Cut", "answer": false}
+        {"name": "Power", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Strength", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Gain", "img_src": "assets/img/traps.jpg", "answer": false},
+        {"name": "Cut", "img_src": "assets/img/traps.jpg", "answer": false}
       ]
     }
   ],

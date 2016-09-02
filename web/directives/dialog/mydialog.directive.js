@@ -14,10 +14,10 @@ angular.module('fitnessApp')
             },
             link: function(scope, element, attrs){
                 var dialog = document.querySelector('dialog');
+                //var dialog = angular.element(element.children()[0]);
                 if (!dialog.showModal) {
                     dialogPolyfill.registerDialog(dialog);
                 }
-
             }
         };
     });

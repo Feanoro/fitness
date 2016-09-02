@@ -11,8 +11,9 @@ angular.module('fitnessApp', [
     'question'
 ]);
 
-angular.module('fitnessApp').run(function($interval){
+angular.module('fitnessApp').run(function($interval, $animate){
     var mdlUpgradeDom = false;
+    $animate.enabled(true);
     $interval(function() {
         if (mdlUpgradeDom) {
             componentHandler.upgradeDom();

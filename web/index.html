@@ -33,6 +33,7 @@
     <!--Custom Directives-->
     <script type="text/javascript" src="directives/box-checkbox/box-checkbox.directive.js"></script>
     <script type="text/javascript" src="directives/dialog/mydialog.directive.js"></script>
+    <script type="text/javascript" src="directives/dropright-selection/dropright-selection.component.js"></script>
 
     <!--Layout Components-->
     <script type="text/javascript" src="component/layout/layout.module.js"></script>
@@ -96,6 +97,7 @@
             </nav>
         </div>
         <main class="mdl-layout__content {{color}}">
+            <my-dialog></my-dialog>
             <div class="page-content" ng-view><!-- Your content goes here --></div>
         </main>
     </div>

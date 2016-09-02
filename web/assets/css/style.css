@@ -56,12 +56,45 @@ body{
 ._dialog_overlay{
     z-index: 0 !important;
 }
-/*
-.card-square.mdl-card {
-    width: 320px;
-    height: 320px;
+.dropright-selection-container:nth-child(odd){
+    /*background-color: #E6E6E6;*/
 }
-.card-square > .mdl-card__title {
-    color: #fff;
-    background: url('{{$ctrl.data.img_src}}') center / cover;
-}*/
+.dropright-selection-container:nth-child(even){
+    /*background-color: #F1F1F1;*/
+}
+.dropright-selection-button{
+    /*width:150px;*/
+    cursor:pointer;
+    background-color: #E6E6E6;
+    color: #C1B3B3;
+    display: flex;
+}
+.dropright-selection-button .dropright-selection-button-title{
+    margin:auto;
+    text-align: center;
+}
+.dropright-selection-item-container{
+    background-color: #E6E6E6;
+    opacity: 0;
+    display: none;
+}
+.dropright-selection-item{
+    padding: 10px;
+    opacity: 0;
+}
+.dropright-selection-item img{
+    width:100%;
+}
+.slide-add, .slide-remove{
+    transition: all linear 0.3s;
+}
+.slide, .slide-add .slide-add-active {
+    opacity: 1;
+    display: block;
+}
+.slide-remove .slide-remove-active{
+}
+
+.slide div{
+    opacity: 1;
+}

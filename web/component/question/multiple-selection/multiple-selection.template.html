@@ -70,9 +70,11 @@
             </div>
         </div>
         <div ng-switch-when="selectable-item-list" class="mdl-grid">
-            <ul class="mdl-list">
-                <li ng-repeat="(key, option) in $ctrl.options" class="mdl-list__item"><button class="mdl-button"></button>{{option.name}}</li>
-            </ul>
+            <div class="mdl-cell mdl-cell--12-col">
+                <div ng-repeat="(key, option) in $ctrl.options" class="dropright-selection-container">
+                    <dropright-selection name="option.name" options="option.options"></dropright-selection>
+                </div>
+            </div>
         </div>
     </div>
     <div ng-if="$ctrl.config.optionsType === 'checkbox'" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
@@ -81,7 +83,7 @@
         </button>
     </div>
 </div>
-<div ng-if="$ctrl.config.optionsType === 'img-block' || $ctrl.config.optionsType === 'img-inline' || $ctrl.config.optionsType === 'img-left'" class="mdl-grid--outline">
+<div ng-if="$ctrl.config.optionsType === 'img-block' || $ctrl.config.optionsType === 'img-inline' || $ctrl.config.optionsType === 'img-left' || $ctrl.config.optionsType === 'selectable-item-list'" class="mdl-grid--outline">
     <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset mdl-typography--text-center">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
             Proceed
