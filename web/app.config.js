@@ -33,10 +33,15 @@ angular.module('fitnessApp')
             templateUrl: 'template/quiz.html'
         }).
         when('/page-1', {
-            template: '<index toggle-menu-visibility="toggleMenuVisibility(visible)"></index>'
+            templateUrl: 'template/question-1.html',
+            resolve: {
+                question1: function(getData){
+                    return getData('data/question1.json');
+                }
+            }
         }).
         when('/page-2', {
-            templateUrl: 'template/question-2.html',
+            template: '<question-handler data="$resolve.question2"></question-handler>',
             resolve: {
                 question2: function(getData){
                     return getData('data/question2.json');

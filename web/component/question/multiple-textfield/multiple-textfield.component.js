@@ -2,7 +2,7 @@
 
 function multipleTextfieldController(){
     var ctrl = this;
-
+    ctrl.count = 0;
     ctrl.createObjInstances = function(){
         ctrl.answer = [];
         for(var i = 0; i < ctrl.count; i++)

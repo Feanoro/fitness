@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "deb89e2111f3c015487e70a9e28e748d",
+    "hash": "5e6e8357a6e11a8900a7af3413fb9fb8",
     "content-hash": "5f373a75452625e82d97c2bc05859136",
     "packages": [
         {
             "name": "bower-asset/angular",
-            "version": "v1.5.9-patch5006",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "8ea5c25c61e59d159e94b23cceaecd3e634c4335"
+                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/8ea5c25c61e59d159e94b23cceaecd3e634c4335",
-                "reference": "8ea5c25c61e59d159e94b23cceaecd3e634c4335",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -32,20 +32,20 @@
         },
         {
             "name": "bower-asset/angular-animate",
-            "version": "v1.5.9-patch5006",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-animate.git",
-                "reference": "67b52ade57fd53cc8a34fb6d4939484cc4e7c7a8"
+                "reference": "688b68844cf95420e1793327f69d0c25589c23d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-animate/zipball/67b52ade57fd53cc8a34fb6d4939484cc4e7c7a8",
-                "reference": "67b52ade57fd53cc8a34fb6d4939484cc4e7c7a8",
+                "url": "https://api.github.com/repos/angular/bower-angular-animate/zipball/688b68844cf95420e1793327f69d0c25589c23d1",
+                "reference": "688b68844cf95420e1793327f69d0c25589c23d1",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.9-patch5006"
+                "bower-asset/angular": "1.5.8"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -58,20 +58,20 @@
         },
         {
             "name": "bower-asset/angular-route",
-            "version": "v1.5.9-patch5006",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-route.git",
-                "reference": "60fab47246467468d8efe5fdd9e59e113afe4632"
+                "reference": "e96eff424fdd9689061659603ca59470375bf024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/60fab47246467468d8efe5fdd9e59e113afe4632",
-                "reference": "60fab47246467468d8efe5fdd9e59e113afe4632",
+                "url": "https://api.github.com/repos/angular/bower-angular-route/zipball/e96eff424fdd9689061659603ca59470375bf024",
+                "reference": "e96eff424fdd9689061659603ca59470375bf024",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.9-patch5006"
+                "bower-asset/angular": "1.5.8"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -84,20 +84,20 @@
         },
         {
             "name": "bower-asset/angular-sanitize",
-            "version": "v1.5.9-patch5006",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular-sanitize.git",
-                "reference": "f5abea5539bd72742c2339dffdb0755cfe3ba0fe"
+                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular-sanitize/zipball/f5abea5539bd72742c2339dffdb0755cfe3ba0fe",
-                "reference": "f5abea5539bd72742c2339dffdb0755cfe3ba0fe",
+                "url": "https://api.github.com/repos/angular/bower-angular-sanitize/zipball/380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
+                "reference": "380756a11f0b6b213d0b82c9fdbe56f40d4c0093",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/angular": "1.5.9-patch5006"
+                "bower-asset/angular": "1.5.8"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -110,16 +110,16 @@
         },
         {
             "name": "bower-asset/angularjs",
-            "version": "v1.5.9-patch5006",
+            "version": "v1.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/angular/bower-angular.git",
-                "reference": "8ea5c25c61e59d159e94b23cceaecd3e634c4335"
+                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/angular/bower-angular/zipball/8ea5c25c61e59d159e94b23cceaecd3e634c4335",
-                "reference": "8ea5c25c61e59d159e94b23cceaecd3e634c4335",
+                "url": "https://api.github.com/repos/angular/bower-angular/zipball/7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
+                "reference": "7e0e546eb6caedbb298c91a9f6bf7de7eeaa4ad2",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -1633,12 +1633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "01b75ac66ea4a876ff88489af3b38cd51c87673f"
+                "reference": "aa8be2235b5dd4e472424552390609f61996f5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/01b75ac66ea4a876ff88489af3b38cd51c87673f",
-                "reference": "01b75ac66ea4a876ff88489af3b38cd51c87673f",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/aa8be2235b5dd4e472424552390609f61996f5ab",
+                "reference": "aa8be2235b5dd4e472424552390609f61996f5ab",
                 "shasum": ""
             },
             "require": {
@@ -1680,7 +1680,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-08-29 18:58:41"
+            "time": "2016-09-02 02:14:06"
         },
         {
             "name": "webmozart/assert",

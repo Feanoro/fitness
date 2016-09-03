@@ -59,6 +59,7 @@ body{
 ._dialog_overlay{
     z-index: 0 !important;
 }
+/*****dropright-selection directive****/
 .dropright-selection-container:nth-child(odd){
     /*background-color: #E6E6E6;*/
 }
@@ -100,4 +101,36 @@ body{
 
 .slide div{
     opacity: 1;
+}
+/*******qt-daysweek*********/
+.week-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.week-container > .day-item{
+    width: 180px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.week-container .day-item:nth-child(odd){
+    background-color: #92CBFF;
+}
+.week-container .day-item:nth-child(even){
+    background-color: #A099FF;
+}
+
+@media screen and (max-width: 479px) {
+    .week-container{
+        flex-direction: column;
+    }
+    .week-container > .day-item{
+        width: auto;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 839px) {
+    .week-container{
+        flex-wrap: wrap;
+    }
 }

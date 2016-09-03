@@ -7,7 +7,7 @@ angular.module('fitnessApp')
     .constant('color_intensity', "400");
 
 angular.module('fitnessApp')
-    .constant('host', "http://localhost:8080/");
+    .constant('host', "http://localhost/");
     //.constant('host', "http://elitefitnessonlinetesting.com/");
 
 angular.module('fitnessApp')

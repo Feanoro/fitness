@@ -27,4 +27,11 @@
             answer="$ctrl.data.answer"
             config="$ctrl.data.config">
     </qt-multiple-textfield>
+    <qt-daysweek
+            ng-switch-when="qt-daysweek"
+            on-question-answered="$ctrl.saveAnswer(data)"
+            statement="$ctrl.data.statement"
+            answer="$ctrl.data.answer"
+            config="$ctrl.data.config">
+    </qt-daysweek>
 </div>
