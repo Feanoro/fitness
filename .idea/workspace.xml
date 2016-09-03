@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6505e58-73f0-4dfc-9adf-56845566a8de" name="Default" comment="Fixing and creating layouts">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/component/question/daysweek/daysweek.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/component/question/daysweek/daysweek.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/data/question1.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/directives/textfields/textfields.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/directives/textfields/textfields.template.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/template/question-2.html" afterPath="$PROJECT_DIR$/web/template/question-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.config.js" afterPath="$PROJECT_DIR$/web/app.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.constant.js" afterPath="$PROJECT_DIR$/web/app.constant.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/style.css" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/component/question/multiple-textfield/multiple-textfield.component.js" afterPath="$PROJECT_DIR$/web/component/question/multiple-textfield/multiple-textfield.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/component/question/question.handler.template.html" afterPath="$PROJECT_DIR$/web/component/question/question.handler.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/data/question2.json" afterPath="$PROJECT_DIR$/web/data/question2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
     </list>
     <ignored path="fitness-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,6 +65,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="fe" />
         <option value="Feanoro &lt;ers.cesar@gmail.com&gt;" />
         <option value="feanoros &lt;ers.cesar@gmail.com&gt;" />
       </list>
@@ -335,7 +322,7 @@
       <workItem from="1472846688946" duration="2461000" />
       <workItem from="1472865606933" duration="12000" />
       <workItem from="1472869110895" duration="1525000" />
-      <workItem from="1472872039240" duration="10002000" />
+      <workItem from="1472872039240" duration="10091000" />
     </task>
     <task id="LOCAL-00001" summary="Initialazing project">
       <created>1470091543119</created>
@@ -512,15 +499,22 @@
       <option name="project" value="LOCAL" />
       <updated>1472819129843</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Fixing and creating layouts">
+      <created>1472884063311</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1472884063311</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336339000" />
+    <option name="totallyTimeSpent" value="336428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21776505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
