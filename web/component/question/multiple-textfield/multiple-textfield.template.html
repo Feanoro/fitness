@@ -6,16 +6,27 @@
 
 <div class="mdl-grid mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--5-offset-desktop mdl-cell--2-offset-tablet mdl-typography--text-center">
-        <input ng-model="$ctrl.count" class="mdl-slider mdl-js-slider" type="range" min="0" max="10" tabindex="0">
+        <input ng-model="$ctrl.count" ng-change="$ctrl.createObjInstances()" class="mdl-slider mdl-js-slider" type="range" min="0" max="10" tabindex="0">
     </div>
-    <!--<div class="mdl-cell mdl-cell--1-col mdl-cell--middle">
+    <div class="mdl-cell mdl-cell--1-col mdl-cell--middle">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect ">
             <i class="material-icons">arrow_forward</i>
         </button>
-    </div>-->
+    </div>
 </div>
 
-<div ng-repeat="i in [] | rangeFilter:$ctrl.count" class="mdl-grid">
+<div ng-repeat="(key, obj) in $ctrl.answer" class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell--2-col mdl-cell--5-offset-desktop mdl-cell--2-offset-tablet">
+        <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
+            <input ng-model="obj.value" class="mdl-textfield__input" type="text" id="textfield-count">
+            <label class="mdl-textfield__label" for="textfield-count">{{$ctrl.config.answerLabel + ' ' + (key + 1)}}</label>
+        </div>
+    </div>
+    <div class="mdl-cell--1-col mdl-cell--middle">
+        {{$ctrl.config.answerInputPrefix}}
+    </div>
+</div>
+<!--<div ng-repeat="i in [] | rangeFilter:$ctrl.count" class="mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--5-offset-desktop mdl-cell--2-offset-tablet">
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
             <input class="mdl-textfield__input" type="text" id="textfield-count">
@@ -25,5 +36,5 @@
     <div class="mdl-cell--1-col mdl-cell--middle">
         {{$ctrl.config.answerInputPrefix}}
     </div>
-</div>
+</div>-->
 

@@ -3,12 +3,13 @@
 function multipleTextfieldController(){
     var ctrl = this;
 
-    ctrl.count = 1;
-    ctrl.getCount = function(){
-
+    ctrl.createObjInstances = function(){
+        ctrl.answer = [];
+        for(var i = 0; i < ctrl.count; i++)
+            ctrl.answer.push({value: ""});
     };
-    ctrl.validateCount = function(){
-
+    ctrl.answerQuestion = function(){
+        ctrl.onQuestionAnswered({data: ctrl.answer});
     };
 }
 
