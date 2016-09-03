@@ -13,5 +13,6 @@ angular.module('fitnessApp')
     .factory('random_background', ['background_colors', 'color_intensity', function(bgc, ci){
         var size = bgc.length - 1;
         var random_index = Math.floor((Math.random() * size));
-        return "mdl-color--" + bgc[random_index] + "-" + ci;
+        return bgc[random_index];
+        //return "mdl-color--" + bgc[random_index] + "-" + ci;
     }]);

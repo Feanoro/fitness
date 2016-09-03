@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('fitnessApp')
-    .constant('background_colors', ['blue', 'orange', 'cyan', 'green', 'purple', 'pink', 'amber', 'light-blue']);
+    .constant('background_colors', ['#EF5E5E', '#FFBC85', '#B2F7B0', '#B2F7B0', '#92CBFF', '#A099FF', '#E399F2', '#999999']);
 
 angular.module('fitnessApp')
     .constant('color_intensity', "400");
