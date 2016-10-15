@@ -5,7 +5,7 @@ function questionHandlerController($window)
     var ctrl = this;
 
     ctrl.saveAnswer = function(data){
-        $window.alert(angular.toJson(data));
+        //$window.alert(angular.toJson(data));
     };
 }
 
