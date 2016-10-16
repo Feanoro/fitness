@@ -3,7 +3,7 @@
 <div class="mdl-dialog__content">
     <p>
         <div class="mdl-textfield mdl-textfield--full-width mdl-js-textfield">
-            <input ng-model="$ctrl.activity" class="mdl-textfield__input" type="text" id="textfield-other">
+            <input ng-model="$ctrl.activity" class="mdl-textfield__input" type="text" id="textfield-other" maxlength="20">
             <label class="mdl-textfield__label" for="textfield-other"></label>
         </div>
     </p>
@@ -21,12 +21,14 @@
     </div>
 </div>
 <div class="week-container">
-    <div ng-repeat="(i, obj) in $ctrl.answer" class="day-item">
+    <div ng-repeat="(i, obj) in $ctrl.answer" class="day-content">
         <h3>{{obj.label}}</h3>
-        <span ng-repeat="(j, val) in obj.value" class="mdl-chip mdl-chip--deletable">
-            <span class="mdl-chip__text">{{val.activity}}</span>
-            <button ng-click="$ctrl.deleteActivity(i, j)" type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
-        </span>
+        <div class="day-item">
+            <span ng-repeat="(j, val) in obj.value" class="mdl-chip mdl-chip--deletable">
+                <span class="mdl-chip__text">{{val.activity}}</span>
+                <button ng-click="$ctrl.deleteActivity(i, j)" type="button" class="mdl-chip__action"><i class="material-icons">cancel</i></button>
+            </span>
+        </div>
         <button ng-click="$ctrl.showModal(obj)" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="button-{{i}}">
             <i class="material-icons">add</i>
         </button>
@@ -34,4 +36,9 @@
             Click <strong>me!</strong>
         </div>
     </div>
+</div>
+<div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
+    <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
+        Proceed
+    </button>
 </div>

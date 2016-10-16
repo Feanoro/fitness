@@ -51,7 +51,7 @@
             </div>
             <div class="mdl-cell mdl-cell--2-col">
                 <div ng-click="$ctrl.showModal()" class="mdl-card card-square-checkbox mdl-shadow--2dp" style="">
-                    <div class="mdl-card__title mdl-card--expand mdl-typography--text-center"><h4 class="full-width">Other</h4></div>
+                    <div class="mdl-card__title mdl-card--expand mdl-typography--text-center"><h4 class="full-width">Type your other equipment</h4></div>
                 </div>
             </div>
         </div>
@@ -78,14 +78,14 @@
             </div>
         </div>
     </div>
-    <div ng-if="$ctrl.config.optionsType === 'checkbox'" class="mdl-cell mdl-cell--4-col mdl-cell--middle">
+<!--    <div ng-if="$ctrl.config.optionsType === 'checkbox'" class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent right">
             <i class="material-icons">arrow_forward</i>
         </button>
-    </div>
+    </div>-->
 </div>
-<div ng-if="$ctrl.config.optionsType === 'img-block' || $ctrl.config.optionsType === 'img-inline' || $ctrl.config.optionsType === 'img-left' || $ctrl.config.optionsType === 'selectable-item-list'" class="mdl-grid--outline">
-    <div class="mdl-cell mdl-cell--11-col mdl-cell--1-offset mdl-typography--text-center">
+<div ng-if="$ctrl.config.optionsType === 'img-block' || $ctrl.config.optionsType === 'img-inline' || $ctrl.config.optionsType === 'img-left' || $ctrl.config.optionsType === 'selectable-item-list' || $ctrl.config.optionsType === 'checkbox'" class="mdl-grid--outline">
+    <div class="mdl-cell mdl-cell--12-col mdl-typography--text-center">
         <button ng-click="$ctrl.answerQuestion()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--green">
             Proceed
         </button>

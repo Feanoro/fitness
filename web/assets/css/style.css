@@ -2,7 +2,7 @@
 body{
     color:black;
 }
-h1, h2, h3{
+span, p, h1, h2, h3, h4{
     color: white;
 }
 /*----- End Global Changes -----*/
@@ -18,7 +18,7 @@ h1, h2, h3{
     font-size: 24px !important;
 }
 .selected{
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .pull-left{
     float:left;
@@ -76,7 +76,7 @@ h1, h2, h3{
     color: white;
 }
 .card-square-checkbox:hover{
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 /*--- end Custom Cards ---*/
@@ -133,24 +133,34 @@ h1, h2, h3{
     justify-content: center;
     text-align: center;
 }
-.week-container > .day-item{
+.week-container > .day-content{
     width: 180px;
     min-height: 400px;
     display: flex;
     flex-direction: column;
 }
-.week-container .day-item:nth-child(odd){
+.week-container .day-content:nth-child(odd){
     background-color: #92CBFF;
 }
-.week-container .day-item:nth-child(even){
+.week-container .day-content:nth-child(even){
     background-color: #A099FF;
+}
+
+.day-content .day-item {
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.day-content .day-item .mdl-chip{
+    white-space: normal;
+    height: auto;
 }
 
 @media screen and (max-width: 479px) {
     .week-container{
         flex-direction: column;
     }
-    .week-container > .day-item{
+    .week-container > .day-content{
         width: auto;
     }
 }

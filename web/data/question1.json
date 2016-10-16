@@ -52,7 +52,7 @@
     "answer": {"value": "", "label": ""},
     "config": {
       "optionsType": "img-left",
-      "img_src": "http://localhost:8080/fitness/web/assets/img/Neck.jpg"
+      "img_src": "assets/img/Neck.jpg"
     }
   },
   {
@@ -61,7 +61,7 @@
     "answer": [{"value": "", "label": "Left"}, {"value": "", "label": "Right"}],
     "config": {
       "optionsType": "img-left",
-      "img_src": "http://localhost:8080/fitness/web/assets/img/Bicep.jpg"
+      "img_src": "assets/img/Bicep.jpg"
     }
   }
 ]
